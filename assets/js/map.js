@@ -2,7 +2,7 @@ function initMap(){
       // Map options
       let options = {
         zoom:13,
-        center:{lat: 59.7578264143131, lng: 18.69815948466188}
+        center:{lat: 59.76234722351998, lng: 18.698235602540187}
       }
 
       let map = new google.maps.Map(document.getElementById('map'), options);
@@ -42,6 +42,11 @@ function initMap(){
           coords:{lat: 59.74638169829759, lng: 18.68744956081739},
           iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
           content:"<p>Hotell Roslagen</p>"
+        },
+        {
+          coords:{lat: 59.76304385446466, lng: 18.671473859991263},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtelje Camping</p>"
         },
         //============================= Accomodation Markers End =============================//
         //============================= Resturant Markers Start ==============================//
@@ -139,8 +144,75 @@ function initMap(){
           coords:{lat: 59.75908900381886, lng: 18.702219126331975},
           iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
           content:"<p>DG's Bar&Kök</p>"
-        }
+        },
         //============================= Resturant Markers End ================================//
+        //============================= Entertainment Markers Start ==========================//
+        {
+          coords:{lat: 59.77049348235772, lng: 18.69422972052371},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtälje Bowling Hall</p>"
+        },
+        {
+          coords:{lat: 59.77554419129101, lng: 18.689168976579605},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Färsna Gård</p>"
+        },
+        {
+          coords:{lat: 59.75189662323695, lng: 18.697639394030812},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtälje Sportcentrum</p>"
+        },
+        {
+          coords:{lat: 59.75338765813969, lng: 18.69838982791664},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Skatepark, Norrtälje</p>"
+        },
+        {
+          coords:{lat: 59.75488328140967, lng: 18.70092987988062},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtälje Bathhouse</p>"
+        },
+        {
+          coords:{lat: 59.75509539239296, lng: 18.696281611732918},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtelje Billiards Club</p>"
+        },
+        {
+          coords:{lat: 59.75595463072056, lng: 18.699532449287744},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Norrtälje museum</p>"
+        },
+        {
+          coords:{lat: 59.757105651228365, lng: 18.703823984060673},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Club Salt</p>"
+        },
+        {
+          coords:{lat: 59.757952679702896, lng: 18.70265185814328},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Cinema Royal</p>"
+        },
+        {
+          coords:{lat: 59.7580121194917, lng: 18.679882585628448},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Vargheden</p>"
+        },
+        {
+          coords:{lat: 59.75840489225495, lng: 18.675345629267184},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Lommarbadet</p>"
+        },
+        {
+          coords:{lat: 59.75140723912763, lng: 18.693949431087255},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Flygfältets Handelsområde</p>"
+        },
+        {
+          coords:{lat: 59.756946577680715, lng: 18.712614923980833},
+          iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content:"<p>Societetsparken</p>"
+        }
+        //============================= Entertainment Markers End ============================//
       ];
 
       // Loop through markers
