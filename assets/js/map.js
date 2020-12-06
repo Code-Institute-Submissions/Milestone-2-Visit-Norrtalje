@@ -5,7 +5,20 @@ function initMap(){
         center:{lat: 59.76234722351998, lng: 18.698235602540187}
       }
 
-      let map = new google.maps.Map(document.getElementById('map'), options);
+      const map = new google.maps.Map(document.getElementById('map'), options);
+
+      const iconBase = "assets/images";
+    const icons = {
+        parking: {
+        icon: iconBase + "parking_lot_maps.png",
+        },
+        library: {
+        icon: iconBase + "library_maps.png",
+        },
+        info: {
+        icon: iconBase + "info-i_maps.png",
+        },
+    };
 
       let markers = [
         {
