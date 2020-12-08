@@ -16,6 +16,51 @@ function initMap(){
         service.nearbySearch(request, callBack);
       };
 
+      const createMarkers = (places) => {
+        removePreviousMarkers();
+        places.forEach((place) => {
+          let marker = new google.maps.Marker({
+            position: place.geometry.location,
+            map: map,
+            title: place.name,
+            // animation: google.maps.Animation.DROP,
+          });
+          google.maps.event.addListner(marker, "click", () => {
+            let request = {
+              placeId: place.place_id,
+              fields: [
+                "name",
+                "formatted_address",
+                "geometry",
+                "rating",
+                "photos",
+              ],
+            };
+            service.getDetails(request, (placeResult, status) => {
+              showDetails(placeResult, marker, status);
+            });
+          });
+        });
+      };
+
+      const showDetails = (placeResult, marker, status) => {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          let placeInfoWindow = = new google.maps.InfoWindow();
+          let rating = "None";
+          if (placeResult.rating) {
+            rating = placeResult.rating;
+          }
+          placeInfoWindow.setContent (
+            // `<div class="window-text"><strong> ${placeResult.name} </strong><br> Rating:${rating}</div>`
+          );
+          placeInfoWindow.open(marker.map, marker);
+          currentInfoWindow = placeInfoWindow;
+          showPanel(placeResult);
+        } else {
+          console.log("showDetails Error");
+        }
+      };
+
 
 
 
