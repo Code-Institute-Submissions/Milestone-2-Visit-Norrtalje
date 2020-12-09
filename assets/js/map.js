@@ -1,25 +1,59 @@
-let pos;
-    let map;
-    function initMap() {
-        // Set the default location and initialize all variables
-        pos = {lat: 59.76234722351998, lng: 18.698235602540187};
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: pos,
-            zoom: 13
-        });
-    }
+let map;
+let service;
+let infowindow;
 
-// function initMap() {
-//       // Map options
-//       let options = {
-//         center:{lat: 59.76234722351998, lng: 18.698235602540187},
-//         zoom: 13,
-//       //   styles: [
-//       //     {featureType: 'poi.attraction',
-//       //     elementType: 'icon',
-//       //   stylers: [{color: '#0DA51F'}]
-//       // }]
-//       };
+function initMap() {
+  const norrtalje = new google.maps.LatLng(59.76234722351998, 18.698235602540187);
+  infowindow = new google.maps.InfoWindow();
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: norrtalje,
+    zoom: 13,
+  });
+  const request = {
+    bounds: map.getBounds(),
+    keyword: "resturant"
+  };
+  service = new google.maps.places.PlacesService(map);
+  service.findPlaceFromQuery(request, (results, status) => {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (let i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+      map.setCenter(results[0].geometry.location);
+    }
+  });
+}
+
+function createMarker(place) {
+  const marker = new google.maps.Marker({
+    map,
+    position: place.geometry.location,
+  });
+  google.maps.event.addListener(marker, "click", () => {
+    infowindow.setContent(place.name);
+    infowindow.open(map);
+  });
+}
+
+// function callback(results, status) {
+//   if (status == google.maps.places.PlacesServiceStatus.OK) {
+//     for (var i = 0; i < results.length; i++) {
+//       createMarker(results[i]);
+//     }
+//   }
+// }
+    
+    
+    // let pos;
+    // let map;
+    // function initMap() {
+    //     // Set the default location and initialize all variables
+    //     pos = {lat: 59.76234722351998, lng: 18.698235602540187};
+    //     map = new google.maps.Map(document.getElementById('map'), {
+    //         center: pos,
+    //         zoom: 13
+    //     });
+    // }
 
 //       map = new google.maps.Map(document.getElementById('map'), options);
 
@@ -61,24 +95,73 @@ let pos;
 //     map.fitBounds(bounds);
 //   });
 
-
-//   getNearbyPlaces(pos);
   
-//   function getNearbyPlaces(position) {
-//     let request = {
-//     location: position,
-//     keyword: 'pizza'
-//     };
+// Perform a Places Nearby Search Request
+// const placesSearch = (keyword) => {
+//   let request = {
+//     bounds: map.getBounds(),
+//     keyword: keyword,
+//   };
+//   service = new google.maps.places.PlacesService(map);
+//   service.nearbySearch(request, callBack);
+// };
 
-//     service = new google.maps.places.PlacesService(map);
-//     service.nearbySearch(request, nearbyCallback);
-// }
-
-// // Handle the results (up to 20) of the Nearby Search
-// function nearbyCallback(results, status) {
-//     if (status == google.maps.places.PlacesServiceStatus.OK) {
+// const callBack = (results, status) => {
+//   /*first remove previous clusters */
+//   removePreviousCluster();
+//   if (status == google.maps.places.PlacesServiceStatus.OK) {
 //     createMarkers(results);
-//     }
-// }
+//     markerCluster = new MarkerClusterer(map, markers, {
+//       imagePath:
+//         "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+//     });
+//   } else {
+//     alert(
+//       "Something went wrong. Please contact us so we can look into this issue."
+//     );
+//   }
+// };
 
-// }
+// const createMarkers = (places) => {
+//   /* first remove previous markers*/
+//   // removePreviousMarkers();
+//   places.forEach((place) => {
+//     let marker = new google.maps.Marker({
+//       position: place.geometry.location,
+//       map: map,
+//       title: place.name,
+//       animation: google.maps.Animation.DROP,
+//     });
+//     /* From stack overflow push markers into an array to be used in the markerClusterer function */
+//     markers.push(marker);
+//     /* adds and event listener for each marker to show its details */
+//     google.maps.event.addListener(marker, "click", () => {
+//       let request = {
+//         placeId: place.place_id,
+//         fields: [
+//           "name",
+//           "formatted_address",
+//           "geometry",
+//           "rating",
+//           "website",
+//           "photos",
+//         ],
+//       };
+//       service.getDetails(request, (placeResult, status) => {
+//         showDetails(placeResult, marker, status);
+//       });
+//     });
+//   });
+// };
+
+// /* Event listeners for each button to make the search */
+// document.getElementById("shopping-btn").addEventListener("click", () => {
+//   placesSearch("shopping");
+// });
+// document.getElementById("parks-btn").addEventListener("click", () => {
+//   placesSearch("parks");
+// });
+// document.getElementById("restaurant-btn").addEventListener("click", () => {
+//   placesSearch("restaurant");
+// });
+// // },
