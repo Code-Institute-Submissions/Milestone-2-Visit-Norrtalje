@@ -1,39 +1,49 @@
-let map;
-let service;
-let infowindow;
+var map;
+var infowindow;
 
 function initMap() {
-  const norrtalje = new google.maps.LatLng(59.76234722351998, 18.698235602540187);
-  infowindow = new google.maps.InfoWindow();
-  map = new google.maps.Map(document.getElementById("map"), {
+  var norrtalje = {lat: 59.76234722351998, lng: 18.698235602540187};
+
+  map = new google.maps.Map(document.getElementById('map'), {
     center: norrtalje,
-    zoom: 13,
+    zoom: 14
   });
-  const request = {
-    bounds: map.getBounds(),
-    keyword: "resturant"
-  };
-  service = new google.maps.places.PlacesService(map);
-  service.findPlaceFromQuery(request, (results, status) => {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (let i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-      map.setCenter(results[0].geometry.location);
+
+  infowindow = new google.maps.InfoWindow();
+
+  var service = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+    location: norrtalje,
+    radius: 300,
+    // query: 'norrtälje',
+    keyword: 'restaurant'
+  }, callback);
+}
+
+function callback(results, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    console.log(results);
+    for (var i = 0; i < results.length; i++) {
+      
+      createMarker(results[i]);
     }
-  });
+  }
 }
 
 function createMarker(place) {
-  const marker = new google.maps.Marker({
-    map,
-    position: place.geometry.location,
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
   });
-  google.maps.event.addListener(marker, "click", () => {
+
+  google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
-    infowindow.open(map);
+    infowindow.open(map, this);
   });
 }
+
+
 
 // function callback(results, status) {
 //   if (status == google.maps.places.PlacesServiceStatus.OK) {
