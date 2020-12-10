@@ -14,7 +14,7 @@ function initMap() {
   var service = new google.maps.places.PlacesService(map);
   service.nearbySearch({
     location: norrtalje,
-    radius: 1500,
+    radius: 2000,
     keyword: 'restaurant'
   }, callback);
 }
