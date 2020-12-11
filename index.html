@@ -4,43 +4,93 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/style.css" />
         <title>Visit Norrtälje</title>
     </head>
     <body>
 <!-- ------------------------------- navbar -------------------------------- -->
-        <nav></nav>
+        <nav class="navbar navbar-expand-md container-fluid">
+            <a class="coat-of-arms" href="#home">
+                <img src="" alt="Norrtälje coat of arms">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expand="false" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-text-align">
+                    <li class="nav-item mr-3 mb-2">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item mr-3 mb-2">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item mr-3 mb-2">
+                        <a class="nav-link" href="#map">MAP</a>
+                    </li>
+                    <li class="nav-item mr-3 mb-2">
+                        <a class="nav-link" href="#contact">CONTACT US</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="#footer">SOCIAL</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 <!-- ----------------------------- navbar end ------------------------------ -->
 <!-- -------------------------------- home --------------------------------- -->
-        <div class="callout"></div>
-<!-- ------------------------------ home end ------------------------------- -->
-<!-- -------------------------------- about -------------------------------- -->
-        <div class="about"></div>
-<!-- ------------------------------ about end ------------------------------ -->
-<!-- --------------------------------- map --------------------------------- -->
-        <div class="row">
-            <div class="col-10">
-                <input class="form-control" id="search" type="text" placeholder="search">
+        <div class="container-fluid callout-container" id="home">
+            <div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12 my-4 callout">
+                    <div class="jumbotron">
+                        <h1 class="jumbotron-header">Visit Norrtälje</h1>
+                        <p class="jumbotron-lead">Short text about Norrtälje</p>
+                        <a class="btn btn-lg btn-call" href="#info">More Info</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2">
-                <div>Norrtälje Map</div>
+<!-- ------------------------------ home end ------------------------------- -->
+<!-- -------------------------------- about -------------------------------- -->
+        <div class="container">
+            <div class="row" id="about">
+                <div class="col-12 my-4">
+                    <h2>About Norrtälje</h2>
+                </div>
+                <div class="col-12">
+                    <p>
+                        Larger text about Norrtälje and it's history Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar facilisis eget eget metus. Suspendisse quis arcu diam. Donec at vehicula eros. Donec condimentum aliquet lorem, non venenatis dui accumsan ut.
+                        Pellentesque ut nisi vehicula, commodo velit quis, pellentesque felis. Integer vitae odio non ipsum facilisis pellentesque quis et diam. Integer at semper ante. Morbi et sollicitudin turpis, ac blandit ligula. Donec ultricies elit eget posuere vestibulum. Nulla bibendum sem nunc, maximus tincidunt dolor commodo eu. Praesent ac nisl diam. Vestibulum finibus efficitur orci vitae tempor.
+                    </p>
+                </div>
             </div>
-            <div class="col-10">
+        </div>
+<!-- ------------------------------ about end ------------------------------ -->
+<!-- --------------------------------- map --------------------------------- --> 
+        <div class="row">
+            <div class="col-12">
+                <h2>Norrtälje Overview</h2>
+            </div>
+            <div class="row d-flex flex-column">
+                <div class="col-2">
+                    <a class="btn btn-info" id="shopping-btn">A Button</a>
+                </div>
+                <div class="col-2">
+                    <a class="btn btn-info" id="parks-btn">B Button</a>
+                </div>
+                <div class="col-2">
+                    <a class="btn btn-info" id="restaurant-btn">B Button</a>
+                </div>
+            </div>
+            <div class="col-10 align-self-stretch">
                 <div id="map"></div>
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <div class="btn btn-info" id="shopping-btn">A Button</div>
-            </div>
-            <div class="col-4">
-                <div class="btn btn-info" id="parks-btn">B Button</div>
-            </div>
-            <div class="col-4">
-                <div class="btn btn-info" id="restaurant-btn">B Button</div>
+            <div class="col-10">
+                <input class="form-control" id="search" type="text" placeholder="search">
             </div>
         </div>
 <!-- ------------------------------- map end ------------------------------- -->
