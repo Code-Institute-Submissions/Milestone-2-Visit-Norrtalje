@@ -10,7 +10,7 @@
     <body>
 <!-- ------------------------------- navbar -------------------------------- -->
         <nav class="navbar navbar-expand-md container-fluid">
-            <a class="coat-of-arms" href="#home">
+            <a class="nav-symbol" href="#home">
                 <img src="" alt="Norrtälje coat of arms">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expand="false" aria-label="Toggle navigation">
@@ -89,7 +89,6 @@
                 <div id="map"></div>
             </div>
         </div>
-        </div>
         <div class="row">
             <div class="col-10">
                 <input class="form-control" id="search" type="text" placeholder="search">
@@ -99,31 +98,67 @@
 <!-- ------------------------------- map end ------------------------------- -->
 <!-- ------------------------------- contact ------------------------------- -->
         <form class="form-body my-4 container-fluid">
-            <h3 class="card-title">Contact Us</h3>
+            <h3 class="contact-form">Contact Us</h3>
             <div class="row">
                 <div class="col-6 form-group py-1">
                     <input type="text" class="form-control" id="f-name" name="f-name" placeholder="First Name" required="" />
-                </div>
-                <div class="col-6 form-group py-1">
                     <input type="text" class="form-control" id="l-name" name="l-name" placeholder="Last Name" required="" />
-                </div>
-                <div class="col-6 form-group py-1">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="" />
-                </div>
-                <div class="col-6 form-group py-1">
                     <input type="number" class="form-control" id="phone" name="phone" placeholder="Telephone" />
                 </div>
-                <div class="col-10">
+                <div class="col-6">
                     <textarea id="message" name="message" rows="10" class="form-control form-text-area" placeholder="Do you have a Question?"></textarea>
                 </div>
             </div>
             <button type="submit" class="btn btn-block my-5">SEND</button>
-        </form>>
+        </form>
 <!-- ----------------------------- contact end ----------------------------- -->
 <!-- ------------------------------- footer -------------------------------- -->
-        <footer></footer>
+        <footer id="footer">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div class="contact-info">
+                        Our Address
+                        Our email
+                        Our Phone
+                    </div>
+                </div>
+                    <div class="class-12 col-sm-4">
+                        <img class="footer-symbol" src="C:\Users\Roosticles IV\Milestone-2-Visit-Norrtalje\assets\images\ban.png" height=25px width=25px alt="Norrtalje Coat of Arms">
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <a target="_blank" href="https://facebook.com/">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a target="_blank" href="https://www.instagram.com/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a target="_blank" href="https://www.tripadvisor.com/#">
+                                    <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+                                    <span class="sr-only">Trip Advisor</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </footer>
 <!-- ----------------------------- footer end ------------------------------ -->
     </body>
+    <script src="https://kit.fontawesome.com/d7066448f0.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtfxprLxTkhP06LCnW3_xbRa0fIZD6PKs&libraries=places&callback=initMap"></script>
