@@ -8,10 +8,10 @@
         <title>Visit Norrtälje</title>
     </head>
     <body>
-<!-- ------------------------------- navbar -------------------------------- -->
+        <!-- ------------------------------- navbar -------------------------------- -->
         <nav class="navbar navbar-expand-md container-fluid">
             <a class="nav-symbol" href="#home">
-                <img src="" alt="Norrtälje coat of arms">
+                <img src="" alt="Norrtälje coat of arms" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expand="false" aria-label="Toggle navigation">
                 <span class="navbar-toggle-icon">
@@ -38,22 +38,48 @@
                 </ul>
             </div>
         </nav>
-<!-- ----------------------------- navbar end ------------------------------ -->
-<!-- -------------------------------- home --------------------------------- -->
-        <div class="container-fluid callout-container" id="home">
-            <div class="opaque-overlay">&nbsp;</div>
-            <div class="row">
-                <div class="col-12 my-4 callout">
-                    <div class="jumbotron">
-                        <h1 class="jumbotron-header">Visit Norrtälje</h1>
-                        <p class="jumbotron-lead">Short text about Norrtälje</p>
-                        <a class="btn btn-lg btn-call" href="#info">More Info</a>
-                    </div>
+        <!-- ----------------------------- navbar end ------------------------------ -->
+        <!-- -------------------------------- home --------------------------------- -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets\images\DuckNorrtälje.jpg" class="d-block w-100" alt="Duck in Town">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets\images\NorrtäljeHamn.jpg" class="d-block w-100" alt="Norrtalje Harbour">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets\images\NorrtäljeRiver_smulan_smulis.jpg" class="d-block w-100" alt="Norrtalje River">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </div>
             </div>
-        </div>
-<!-- ------------------------------ home end ------------------------------- -->
-<!-- -------------------------------- about -------------------------------- -->
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        <!-- ------------------------------ home end ------------------------------- -->
+        <!-- -------------------------------- about -------------------------------- -->
         <div class="container">
             <div class="row" id="about">
                 <div class="col-12 my-4">
@@ -61,42 +87,45 @@
                 </div>
                 <div class="col-12">
                     <p>
-                        Larger text about Norrtälje and it's history Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar facilisis eget eget metus. Suspendisse quis arcu diam. Donec at vehicula eros. Donec condimentum aliquet lorem, non venenatis dui accumsan ut.
-                        Pellentesque ut nisi vehicula, commodo velit quis, pellentesque felis. Integer vitae odio non ipsum facilisis pellentesque quis et diam. Integer at semper ante. Morbi et sollicitudin turpis, ac blandit ligula. Donec ultricies elit eget posuere vestibulum. Nulla bibendum sem nunc, maximus tincidunt dolor commodo eu. Praesent ac nisl diam. Vestibulum finibus efficitur orci vitae tempor.
+                        Larger text about Norrtälje and it's history Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl
+                        sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar
+                        facilisis eget eget metus. Suspendisse quis arcu diam. Donec at vehicula eros. Donec condimentum aliquet lorem, non venenatis dui accumsan ut. Pellentesque ut nisi vehicula, commodo velit quis, pellentesque felis.
+                        Integer vitae odio non ipsum facilisis pellentesque quis et diam. Integer at semper ante. Morbi et sollicitudin turpis, ac blandit ligula. Donec ultricies elit eget posuere vestibulum. Nulla bibendum sem nunc,
+                        maximus tincidunt dolor commodo eu. Praesent ac nisl diam. Vestibulum finibus efficitur orci vitae tempor.
                     </p>
                 </div>
             </div>
         </div>
-<!-- ------------------------------ about end ------------------------------ -->
-<!-- --------------------------------- map --------------------------------- --> 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h2>Norrtälje Overview</h2>
+        <!-- ------------------------------ about end ------------------------------ -->
+        <!-- --------------------------------- map --------------------------------- -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Norrtälje Overview</h2>
+                </div>
+                <div class="row d-md-block">
+                    <div class="col-2 float left">
+                        <a class="btn btn-info" id="shopping-btn">A Button</a>
+                    </div>
+                    <div class="col-2 float left">
+                        <a class="btn btn-info" id="parks-btn">B Button</a>
+                    </div>
+                    <div class="col-2 float left">
+                        <a class="btn btn-info" id="restaurant-btn">B Button</a>
+                    </div>
+                </div>
+                <div class="col-10 float-right">
+                    <div id="map"></div>
+                </div>
             </div>
-            <div class="row d-md-block">
-                <div class="col-2 float left">
-                    <a class="btn btn-info" id="shopping-btn">A Button</a>
+            <div class="row">
+                <div class="col-10">
+                    <input class="form-control" id="search" type="text" placeholder="search" />
                 </div>
-                <div class="col-2 float left">
-                    <a class="btn btn-info" id="parks-btn">B Button</a>
-                </div>
-                <div class="col-2 float left">
-                    <a class="btn btn-info" id="restaurant-btn">B Button</a>
-                </div>
-            </div>
-            <div class="col-10 float-right">
-                <div id="map"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-10">
-                <input class="form-control" id="search" type="text" placeholder="search">
-            </div>
-        </div>
-    </div>
-<!-- ------------------------------- map end ------------------------------- -->
-<!-- ------------------------------- contact ------------------------------- -->
+        <!-- ------------------------------- map end ------------------------------- -->
+        <!-- ------------------------------- contact ------------------------------- -->
         <form class="form-body my-4 container-fluid">
             <h3 class="contact-form">Contact Us</h3>
             <div class="row">
@@ -112,51 +141,49 @@
             </div>
             <button type="submit" class="btn btn-block my-5">SEND</button>
         </form>
-<!-- ----------------------------- contact end ----------------------------- -->
-<!-- ------------------------------- footer -------------------------------- -->
+        <!-- ----------------------------- contact end ----------------------------- -->
+        <!-- ------------------------------- footer -------------------------------- -->
         <footer id="footer">
             <div class="row">
                 <div class="col-12 col-sm-4">
                     <div class="contact-info">
-                        Our Address
-                        Our email
-                        Our Phone
+                        Our Address Our email Our Phone
                     </div>
                 </div>
-                    <div class="class-12 col-sm-4">
-                        <img class="footer-symbol" src="C:\Users\Roosticles IV\Milestone-2-Visit-Norrtalje\assets\images\ban.png" height=25px width=25px alt="Norrtalje Coat of Arms">
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <div class="row">
-                            <div class="col-6">
-                                <a target="_blank" href="https://facebook.com/">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <span class="sr-only">Facebook</span>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a target="_blank" href="https://www.instagram.com/">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    <span class="sr-only">Instagram</span>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a target="_blank" href="https://twitter.com/">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <span class="sr-only">Twitter</span>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a target="_blank" href="https://www.tripadvisor.com/#">
-                                    <i class="fab fa-tripadvisor" aria-hidden="true"></i>
-                                    <span class="sr-only">Trip Advisor</span>
-                                </a>
-                            </div>
+                <div class="class-12 col-sm-4">
+                    <img class="footer-symbol" src="C:\Users\Roosticles IV\Milestone-2-Visit-Norrtalje\assets\images\ban.png" height="25px" width="25px" alt="Norrtalje Coat of Arms" />
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <a target="_blank" href="https://facebook.com/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="https://twitter.com/">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a target="_blank" href="https://www.tripadvisor.com/#">
+                                <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+                                <span class="sr-only">Trip Advisor</span>
+                            </a>
                         </div>
                     </div>
+                </div>
             </div>
         </footer>
-<!-- ----------------------------- footer end ------------------------------ -->
+        <!-- ----------------------------- footer end ------------------------------ -->
     </body>
     <script src="https://kit.fontawesome.com/d7066448f0.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
