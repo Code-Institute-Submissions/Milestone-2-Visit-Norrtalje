@@ -4,14 +4,72 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    /* font-family: 'PT Serif', serif; */
     background-color: rgb(194, 194, 194);
     text-align: center;
+}
+
+/* ------------------------------- nav section ------------------------------ */
+
+nav {
+    height: 55px;
+    background-color: blue;
+}
+
+.nav-link {
+    color: yellow;
+}
+
+.nav-text-align {
+    text-align: end;
 }
 
 /* ----------------------------------- map ---------------------------------- */
 
 #map{
     height:400px;
-    width: 90%;
+    width: 100%;
+}
+
+/* ------------------------------ Contact form ------------------------------ */
+
+form {
+    background-color: blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-group {
+    padding-top: 0;
+}
+
+.contact-form {
+    color: yellow;
+}
+
+.form-boxes {
+    margin-bottom: 2rem;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+
+footer {
+    background-color: blue;
+}
+
+/* --------------------------------- headers -------------------------------- */
+
+.main-headers{
+    font-family: 'PT Serif', serif;
+}
+
+/* --------------------------------- buttons -------------------------------- */
+
+.btn-map {
+    background-color: blue;
+    color: yellow!important;
+}
+
+.btn-contact {
+    background-color: rgb(124, 32, 32);
+    color: yellow!important;
 }

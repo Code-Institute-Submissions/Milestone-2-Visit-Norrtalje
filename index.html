@@ -68,14 +68,7 @@
                   <h5 class="main-headers">Third slide label</h5>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/images/NorrtaljeSnow2.jpg" class="d-block w-100" alt="Norrtalje Snow">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="main-headers">Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-              </div>
+            </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,20 +100,23 @@
         </div>
         <!-- ------------------------------ about end ------------------------------ -->
         <!-- --------------------------------- map --------------------------------- -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="main-headers">Norrtälje Overview</h2>
                 </div>
                 <div class="row d-md-block">
                     <div class="col-2 float left">
-                        <a class="btn btn-info" id="shopping-btn">A Button</a>
+                        <a class="btn btn-map" id="shopping-btn">A Button</a>
                     </div>
                     <div class="col-2 float left">
-                        <a class="btn btn-info" id="parks-btn">B Button</a>
+                        <a class="btn btn-map" id="parks-btn">B Button</a>
                     </div>
                     <div class="col-2 float left">
-                        <a class="btn btn-info" id="restaurant-btn">B Button</a>
+                        <a class="btn btn-map" id="restaurant-btn">C Button</a>
+                    </div>
+                    <div class="col-2 float left">
+                        <a class="btn btn-map" id="restaurant-btn">D Button</a>
                     </div>
                 </div>
                 <div class="col-10 float-right">
@@ -134,21 +130,40 @@
             </div>
         </div>
         <!-- ------------------------------- map end ------------------------------- -->
+
+        <!-- ---------------------------- Info section ----------------------------- -->
+        <h4>Accomodation</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar</p>
+        <h4>Entertainment</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar</p>
+        <h4>Resturants</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar</p>
+        <h4>Parking</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat cursus volutpat. Maecenas lobortis tortor ac magna pretium ornare. Quisque dignissim diam in nisl sagittis semper. Etiam suscipit lobortis nisi, imperdiet fringilla tellus sagittis eu. Etiam vitae turpis nec nisl congue ultricies. Cras vehicula lorem sed feugiat tincidunt. Integer ac metus non erat pulvinar</p>
+        <!-- -------------------------- Info section end --------------------------- -->
         <!-- ------------------------------- contact ------------------------------- -->
-        <form class="form-body my-4 container-fluid">
+        <form class="form-body my-4 container">
             <h3 class="contact-form main-headers">Contact Us</h3>
             <div class="row">
-                <div class="col-6 form-group py-1">
+                <div class="col-6 form-group">
+                    <div class="form-boxes">
                     <input type="text" class="form-control" id="f-name" name="f-name" placeholder="First Name" required="" />
+                </div>
+                <div class="form-boxes">
                     <input type="text" class="form-control" id="l-name" name="l-name" placeholder="Last Name" required="" />
+                </div>
+                <div class="form-boxes">
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="" />
+                </div>
+                <div class="form-boxes">
                     <input type="number" class="form-control" id="phone" name="phone" placeholder="Telephone" />
+                </div>
                 </div>
                 <div class="col-6">
                     <textarea id="message" name="message" rows="10" class="form-control form-text-area" placeholder="Do you have a Question?"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-block my-5">SEND</button>
+            <button type="submit" class="btn btn-block btn-contact my-3">SEND</button>
         </form>
         <!-- ----------------------------- contact end ----------------------------- -->
         <!-- ------------------------------- footer -------------------------------- -->
@@ -156,7 +171,11 @@
             <div class="row">
                 <div class="col-12 col-sm-4">
                     <div class="contact-info">
-                        Our Address Our email Our Phone
+                        <address>
+                            124 Conch Street, Bikini Bottom<br />
+                            (707) 663-4279<br />
+                            spongebob@pulsegym.com
+                        </address>
                     </div>
                 </div>
                 <div class="class-12 col-sm-4">
