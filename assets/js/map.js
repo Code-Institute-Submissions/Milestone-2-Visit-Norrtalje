@@ -12,142 +12,58 @@ function initMap() {
   /* ------------------------------ markers array ----------------------------- */
   let markers = [
       {
-          coords: { lat: 59.75610989844251, lng: 18.722778964056698 },
-          type: "Restaurant",
-          iconImage: "assets/images/restaurant-pin.png",
-          content: "<h6>Havspiren</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
-      },
-      {
-          coords: { lat: 59.758203851800474, lng: 18.709756839272078 },
-          type: "Restaurant",
-          iconImage: "assets/images/restaurant-pin.png",
-          content: "<h6>Salt & Sea</h6> <br> <p>Rating:4.2</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75792083803483, lng: 18.70894949435303},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>S/S Norrtelje</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75811278272289, lng: 18.708442999033014},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Den Gyllene Räven</h6> <br> <p>Rating:4.1</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75748731062395, lng: 18.705404056234435},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Pinchos</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75730575857509, lng: 18.705408498652393},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Harry's</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75659091174056, lng: 18.705591453090186},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Ed's Burgers's</h6> <br> <p>Rating:4.3</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75665339360885, lng: 18.70522600210995},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Asien Hamn</h6> <br> <p>Rating:4.1</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75687390092211, lng: 18.70414907577552},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Poke Burger</h6> <br> <p>Rating:4.5</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75666671956848, lng: 18.703888272860844},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Little Dublin</h6> <br> <p>Rating:3.7</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.757192111252735, lng: 18.700829967871435},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Kwang Chow</h6> <br> <p>Rating:3.8</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.757192111252735, lng: 18.700829967871435},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Kwang Chow</h6> <br> <p>Rating:3.8</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.75706816262207, lng: 18.70329558849524},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Taco Bar</h6> <br> <p>Rating:3.5</p> <br> <p>Restaurant</p>"
-      },
-      {
-        coords: { lat: 59.7589454960521, lng: 18.70349960401706},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Lilys Kök</h6> <br> <p>Rating:3.5</p> <br> <p>Restaurant</p>"
-      },
-      {
         coords: { lat: 59.75716171517352, lng: 18.698004931226563},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>Kapellet</h6> <br> <p>Rating:4.4</p> <br> <p>Restaurant</p>"
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Kapellet</h6> <br> <p>Rating:4.4</p> <br> <p>SportsBar</p>"
       },
       {
-        coords: { lat: 59.75692732670315, lng: 18.69618371129288},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>ANTEP's</h6><p>Rating:4.2</p><p>Restaurant</p>"
+        coords: { lat: 59.759090460443666, lng: 18.702219352212374},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>DG's Sportsbar</h6> <br> <p>Rating:4.0</p> <br> <p>SportsBar</p>"
       },
       {
-        coords: { lat: 59.75692732670315, lng: 18.69618371129288},
-        type: "Restaurant",
-        iconImage: "assets/images/restaurant-pin.png",
-        content: "<h6>ANTEP's</h6> <br> <p>Rating:4.2</p> <br> <p>Restaurant</p>"
+        coords: { lat: 59.75728682442034, lng: 18.702591382973594},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Vinbaren</h6> <br> <p>Rating:4.2</p> <br> <p>WineBar</p>"
       },
       {
-        coords: { lat: 59.75463586161074, lng: 18.716471140214868},
-        type: "Accomodation",
-        iconImage: "assets/images/hotel-pin.png",
-        content: "<h6>Granparken</h6> <br> <p>Rating:4.3</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.757109514071615, lng: 18.703839951538132},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Club Salt</h6> <br> <p>Rating:4.0</p> <br> <p>Night Club</p>"
       },
       {
-        coords: { lat: 59.746382872877014, lng: 18.6874437333132},
-        type: "Accomodation",
-        iconImage: "assets/images/hotel-pin.png",
-        content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.75666693066083, lng: 18.703888440526757},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Little Dublin</h6> <br> <p>Rating:3.7</p> <br> <p>Pub</p>"
       },
       {
-        coords: { lat: 59.75798645227602, lng: 18.707302808908896},
-        type: "Accomodation",
-        iconImage: "assets/images/hotel-pin.png",
-        content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.75798712777614, lng: 18.707310268701008},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Åtellet</h6> <br> <p>Rating:4.1</p> <br> <p>Hotel Bar</p>"
       },
       {
-        coords: { lat: 59.758614954555966, lng: 18.699488863378857},
-        type: "Accomodation",
-        iconImage: "assets/images/hotel-pin.png",
-        content: "<h6>Berlings B&B</h6> <br> <p>Rating:4.9</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.75811261386045, lng: 18.708443040963793},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Den Gyllene Räven</h6> <br> <p>Rating:4.1</p> <br> <p>Bar</p>"
       },
       {
-        coords: { lat: 59.76107954182671, lng: 18.70144017043721},
-        type: "Accomodation",
-        iconImage: "assets/images/hotel-pin.png",
-        content: "<h6>Sven Fredriksson B&B</h6> <br> <p>Rating:4.4</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.7582051503135, lng:18.709757323269606},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>Salt & Sea</h6> <br> <p>Rating:4.2</p> <br> <p>Bar</p>"
       },
       {
-        coords: { lat: 59.76304691004011, lng: 18.6714772427103},
-        type: "Accomodation",
-        iconImage: "assets/images/camping-pin.png",
-        content: "<h6>Norrtälje Camping</h6> <br> <p>Rating:4.4</p> <br> <p>Accomodation</p>"
+        coords: { lat: 59.75893086109899, lng: 18.703008708806884},
+        type: "Activities",
+        iconImage: "assets/images/bar-pin.png",
+        content: "<h6>På Grillen</h6> <br> <p>Rating:4.0</p> <br> <p>Bar</p>"
       },
       {
         coords: { lat: 59.756935432379045, lng: 18.712592123409696},
@@ -227,6 +143,156 @@ function initMap() {
         iconImage: "assets/images/sport-pin.png",
         content: "<h6>Norrtälje Bathhouse</h6> <br> <p>Rating:4.4</p> <br> <p>Swimming facility</p>"
       },
+      {
+        coords: { lat: 59.7592425446848, lng: 18.701557662031693},
+        type: "Parking",
+        iconImage: "assets/images/parking-pin.png",
+        content: "<h6>Tor Parking Lot</h6>"
+      },
+      {
+        coords: { lat: 59.7583820400463, lng: 18.70698108862644},
+        type: "Parking",
+        iconImage: "assets/images/parking-pin.png",
+        content: "<h6>Vulkanus Parking Lot</h6>"
+      },
+      {
+        coords: { lat: 59.75693453203078, lng: 18.69852408373768},
+        type: "Parking",
+        iconImage: "assets/images/parking-pin.png",
+        content: "<h6>Jupiter Parking Lot</h6>"
+      },
+      {
+        coords: { lat: 59.75463586161074, lng: 18.716471140214868},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h6>Granparken</h6> <br> <p>Rating:4.3</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.746382872877014, lng: 18.6874437333132},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.75798645227602, lng: 18.707302808908896},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.758614954555966, lng: 18.699488863378857},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h6>Berlings B&B</h6> <br> <p>Rating:4.9</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.76107954182671, lng: 18.70144017043721},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h6>Sven Fredriksson B&B</h6> <br> <p>Rating:4.4</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.76304691004011, lng: 18.6714772427103},
+        type: "Accomodation",
+        iconImage: "assets/images/camping-pin.png",
+        content: "<h6>Norrtälje Camping</h6> <br> <p>Rating:4.4</p> <br> <p>Accomodation</p>"
+      },
+      {
+        coords: { lat: 59.75610989844251, lng: 18.722778964056698 },
+        type: "Restaurant",
+        iconImage: "assets/images/restaurant-pin.png",
+        content: "<h6>Havspiren</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
+    },
+    {
+        coords: { lat: 59.758203851800474, lng: 18.709756839272078 },
+        type: "Restaurant",
+        iconImage: "assets/images/restaurant-pin.png",
+        content: "<h6>Salt & Sea</h6> <br> <p>Rating:4.2</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75792083803483, lng: 18.70894949435303},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>S/S Norrtelje</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75811278272289, lng: 18.708442999033014},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Den Gyllene Räven</h6> <br> <p>Rating:4.1</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75748731062395, lng: 18.705404056234435},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Pinchos</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75730575857509, lng: 18.705408498652393},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Harry's</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75659091174056, lng: 18.705591453090186},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Ed's Burgers's</h6> <br> <p>Rating:4.3</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75665339360885, lng: 18.70522600210995},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Asien Hamn</h6> <br> <p>Rating:4.1</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75687390092211, lng: 18.70414907577552},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Poke Burger</h6> <br> <p>Rating:4.5</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75666671956848, lng: 18.703888272860844},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Little Dublin</h6> <br> <p>Rating:3.7</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.757192111252735, lng: 18.700829967871435},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Kwang Chow</h6> <br> <p>Rating:3.8</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75893086109899, lng: 18.703008708806884},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>På Grillen</h6> <br> <p>Rating:4.0</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75706816262207, lng: 18.70329558849524},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Taco Bar</h6> <br> <p>Rating:3.5</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.7589454960521, lng: 18.70349960401706},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Lilys Kök</h6> <br> <p>Rating:3.5</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75716171517352, lng: 18.698004931226563},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>Kapellet</h6> <br> <p>Rating:4.4</p> <br> <p>Restaurant</p>"
+    },
+    {
+      coords: { lat: 59.75692732670315, lng: 18.69618371129288},
+      type: "Restaurant",
+      iconImage: "assets/images/restaurant-pin.png",
+      content: "<h6>ANTEP's</h6> <br> <p>Rating:4.2</p> <br> <p>Restaurant</p>"
+    }
   ];
 
   /* --------------------------- loop through array --------------------------- */
