@@ -173,18 +173,18 @@ function initMap() {
         iconImage: "assets/images/boat-pin.png",
         content: "<h1>Norrtälje Sailing Club</h1> <br> <p>Rating:4.5</p> <br> <p>Park</p>"
       },
-      {
-        coords: { lat: 59.75711375676702, lng: 18.700849413815916},
-        type: "Activities",
-        iconImage: "assets/images/boat-pin.png",
-        content: "<h1>Norrtälje Town Center</h1> <br> <p>Shopping Area</p>"
-      },
-      {
-        coords: { lat: 59.75467589772488, lng: 18.7264464046818},
-        type: "Activities",
-        iconImage: "assets/images/boat-pin.png",
-        content: "<h1>Norrteljeporten</h1> <br> <p>Shopping Mall</p>"
-      },
+    //   {
+    //     coords: { lat: 59.75711375676702, lng: 18.700849413815916},
+    //     type: "Activities",
+    //     iconImage: "assets/images/boat-pin.png",
+    //     content: "<h1>Norrtälje Town Center</h1> <br> <p>Shopping Area</p>"
+    //   },
+    //   {
+    //     coords: { lat: 59.75467589772488, lng: 18.7264464046818},
+    //     type: "Activities",
+    //     iconImage: "assets/images/boat-pin.png",
+    //     content: "<h1>Norrteljeporten</h1> <br> <p>Shopping Mall</p>"
+    //   },
       {
         coords: { lat: 59.75467589772488, lng: 18.7264464046818},
         type: "Activities",
@@ -203,6 +203,12 @@ function initMap() {
         iconImage: "assets/images/sport-pin.png",
         content: "<h1>Roslagsbowling</h1> <br> <p>Rating:4.4</p> <br> <p>Bowling Alley</p>"
       },
+    //   {
+    //     coords: { lat: 59.77555542921295, lng: 18.6891789760667},
+    //     type: "Activities",
+    //     iconImage: "assets/images/park-pin.png",
+    //     content: "<h1>Färsna Gård</h1> <br> <p>Rating:3.9</p> <br> <p>Farm and Play Area</p>"
+    //   },
   ];
 
   /* --------------------------- loop through array --------------------------- */
