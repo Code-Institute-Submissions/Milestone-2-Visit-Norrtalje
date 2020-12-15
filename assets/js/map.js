@@ -3,7 +3,7 @@ function initMap() {
   /* ------------------------------- map options ------------------------------ */
   let options = {
       zoom: 14,
-      center: { lat: 59.76234722351998, lng: 18.698235602540187 },
+      center: { lat: 59.75942851128388, lng: 18.71178679288917 },
   };
 
   /* ------------------------------ generate map ------------------------------ */
@@ -114,10 +114,58 @@ function initMap() {
         content: "<h1>ANTEP's</h1> <br> <p>Rating:4.2</p>"
       },
       {
-        coords: { lat: 59.75463586161074, 18.716471140214868},
+        coords: { lat: 59.75463586161074, lng: 18.716471140214868},
         type: "Accomodation",
         iconImage: "assets/images/hotel-pin.png",
-        content: "<h1>ANTEP's</h1> <br> <p>Rating:4.2</p>"
+        content: "<h1>Granparken</h1> <br> <p>Rating:4.3</p>"
+      },
+      {
+        coords: { lat: 59.746382872877014, lng: 18.6874437333132},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h1>Hotell Roslagen</h1> <br> <p>Rating:3.7</p>"
+      },
+      {
+        coords: { lat: 59.75798645227602, lng: 18.707302808908896},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h1>Hotell Roslagen</h1> <br> <p>Rating:3.7</p>"
+      },
+      {
+        coords: { lat: 59.758614954555966, lng: 18.699488863378857},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h1>Berlings B&B</h1> <br> <p>Rating:4.9</p>"
+      },
+      {
+        coords: { lat: 59.76107954182671, lng: 18.70144017043721},
+        type: "Accomodation",
+        iconImage: "assets/images/hotel-pin.png",
+        content: "<h1>Sven Fredriksson B&B</h1> <br> <p>Rating:4.4</p>"
+      },
+      {
+        coords: { lat: 59.756935432379045, lng: 18.712592123409696},
+        type: "Activities",
+        iconImage: "assets/images/park-pin.png",
+        content: "<h1>Societetsparken</h1> <br> <p>Rating:4.2</p> <br> <p>Park</p>"
+      },
+      {
+        coords: { lat: 59.75292287490571, lng: 18.729321035281842},
+        type: "Activities",
+        iconImage: "assets/images/beach-pin.png",
+        content: "<h1>Kärleksuddens Beach</h1> <br> <p>Rating:3.7</p> <br> <p>Park</p>"
+      },
+      {
+        coords: { lat: 59.75467589772488, lng: 18.7264464046818},
+        type: "Activities",
+        iconImage: "assets/images/boat-pin.png",
+        content: "<h1>Norrtälje Sailing Club</h1> <br> <p>Rating:4.5</p> <br> <p>Park</p>"
+      },
+      {
+        coords: { lat: 59.75467589772488, lng: 18.7264464046818},
+        type: "Activities",
+        iconImage: "assets/images/boat-pin.png",
+        content: "<h1>Norrtälje Town Center</h1> <br> <p>Shopping Area</p>"
       },
   ];
 
