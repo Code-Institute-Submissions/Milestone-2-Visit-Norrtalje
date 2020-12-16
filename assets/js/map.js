@@ -325,8 +325,25 @@ function initMap() {
   }
 };
 
-document.getElementById("Accommodation-btn").addEventListener("click", function() {
-  document.getElementById("info-header").innerHTML = "Accomodation";
-  document.getElementById("info-text").innerHTML = "Next Stop: The Right Property for You. Big Range of Top-Rated Properties. Price Guarantee. Large selection of the hotels and better prices than competitors 5/5. Photos & Reviews. Customer Support. Easy to Modify Plans. Flexible Payment Options. Save with Secret Prices.";
+document.getElementById("accommodation-btn").addEventListener("click", function clearMarkers() {
+  addMarker(null);
 });
 
+
+
+document.getElementById("accommodation-btn").addEventListener("click", function() {
+  document.getElementById("info-header").innerHTML = "Accomodation";
+  document.getElementById("info-text").innerHTML = "Next Stop: The Right Property for You. Big Range of Top-Rated Properties. Price Guarantee. Large selection of the hotels and better prices than competitors 5/5. Photos & Reviews. Customer Support. Easy to Modify Plans. Flexible Payment Options. Save with Secret Prices.";
+  });
+document.getElementById("restaurant-btn").addEventListener("click", function() {
+    document.getElementById("info-header").innerHTML = "Restaurants";
+    document.getElementById("info-text").innerHTML = "Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her narrative songwriting, which often centers around her personal life, has received widespread critical plaudits and media coverage.";
+    });
+document.getElementById("activities-btn").addEventListener("click", function() {
+    document.getElementById("info-header").innerHTML = "Activities";
+    document.getElementById("info-text").innerHTML = "Cabbage (comprising several cultivars of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage";
+    });
+    document.getElementById("parking-btn").addEventListener("click", function() {
+      document.getElementById("info-header").innerHTML = "Parking";
+      document.getElementById("info-text").innerHTML = "What information do I get using the blue box? When you select an area or a place at nearby, a list with all our parking facilities where we lease parking spaces";
+      });
