@@ -323,5 +323,10 @@ function initMap() {
           });
       }
   }
-}
+};
+
+document.getElementById("Accommodation-btn").addEventListener("click", function() {
+  document.getElementById("info-header").innerHTML = "Accomodation";
+  document.getElementById("info-text").innerHTML = "Next Stop: The Right Property for You. Big Range of Top-Rated Properties. Price Guarantee. Large selection of the hotels and better prices than competitors 5/5. Photos & Reviews. Customer Support. Easy to Modify Plans. Flexible Payment Options. Save with Secret Prices.";
+});
 
