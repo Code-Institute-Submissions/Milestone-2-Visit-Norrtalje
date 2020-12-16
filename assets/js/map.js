@@ -1,13 +1,82 @@
-function myMap({
+let map;
+let infoObj = [];
+let centerCoords = {
+  lat: 59.76193085929391,
+  lng: 18.6962071851466
+};
 
-  const mapProp = {
-    center: new google.maps.LatLng(59.76193085929391,18.6962071851466),
-    zoom: 13
-  };
+let icons = {
+  accommodation: {
+    icon: "assets/images/hotel-pin.png"
+  },
+  restaurant: {
+    icon: "assets/images/restaurant-pin.png"
+  },
+  parking: {
+    icon: "assets/images/parking-pin.png"
+  }
+};
 
-  const map = new google.maps.Map(document.getElementById)
-})
+let markersOnMap = [
+  {
+    placeName:"Place",
+    LatLng: [{
+      lat: 59.75463586161074, lng: 18.716471140214868
+    }],
+    type: "accommodation"
+  },
+  {
+    placeName:"Here",
+    LatLng: [{
+      lat: 59.75665339360885, lng: 18.70522600210995
+    }],
+    type: "restaurant"
+  },
+];
 
+window.onload = function() {
+  initMap();
+};
+
+function addMarkerInfo() {
+  for(let i = 0; i < markersOnMap.length; i++) {
+
+    let contentText = "<h6>" + markersOnMap[i].placeName + "</h6>";
+
+    const marker = new google.maps.Marker({
+      position: markersOnMap[i].LatLng[0],
+      icon: icons[markersOnMap[i].type].icon,
+      map: map
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+      content: contentText,
+    });
+
+    marker.addListener("click", function(){
+      closeOtherInfo();
+      infoWindow.open(marker.get("map"), marker);
+      infoObj[0] = infoWindow;
+    });
+  }
+}
+
+function closeOtherInfo() {
+  if (infoObj.length > 0) {
+  infoObj[0].set("marker", null);
+  infoObj[0].close();
+  infoObj[0].length = 0;
+  }
+}
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: centerCoords
+  });
+
+  addMarkerInfo();
+}
 
 // function initMap() {
 
@@ -353,7 +422,7 @@ function myMap({
 //     });
 // document.getElementById("activities-btn").addEventListener("click", function() {
 //     document.getElementById("info-header").innerHTML = "Activities";
-//     document.getElementById("info-text").innerHTML = "Cabbage (comprising several cultivars of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage";
+//     document.getElementById("info-text").innerHTML = "Cabbage (comprising several cultilets of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage";
 //     });
 //     document.getElementById("parking-btn").addEventListener("click", function() {
 //       document.getElementById("info-header").innerHTML = "Parking";
