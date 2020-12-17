@@ -20,13 +20,17 @@ nav {
     width: 30%;
 }
 
+/* .nav-item {
+    width: auto;
+} */
+
 .nav-link {
-    color: #fffb05;
-    font-size: 1.8rem;
+    color: #ffd400;
+    font-size: 150%;
 }
 
 .nav-link:hover {
-    color: #a1a02f;
+    color: #ffd400;
 }
 
 .nav-text-align {
@@ -71,7 +75,7 @@ form {
 }
 
 .contact-form {
-    color: #fffb05;
+    color: #ffd400;
 }
 
 .form-boxes {
@@ -85,15 +89,21 @@ footer {
 }
 
 .contact-info {
-    color: #fffb05;
+    color: #ffd400;
+}
+
+.social-left {
+    margin-left: 5%;
+    margin-right: -20%;
 }
 
 
 .social-links a i {
     font-size: 50px;
     text-align: center;
-    color: #fffb05;
+    color: #ffd400;
     background: #085394;
+    margin-top: 0.5rem;
 }
 
 /* --------------------------------- headers -------------------------------- */
@@ -109,7 +119,7 @@ footer {
 .btn-map {
     width: 10rem;
     background-color: #085394;
-    color: #fffb05!important;
+    color: #ffd400!important;
     margin-top: 3%;
 }
 
@@ -118,6 +128,6 @@ footer {
 }
 
 .btn-contact {
-    background-color: #fffb05;
+    background-color: #ffd400;
     color: #085394!important;
 }

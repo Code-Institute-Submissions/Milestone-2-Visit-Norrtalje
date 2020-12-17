@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- ------------------------------- navbar -------------------------------- -->
-        <nav class="navbar fixed-top navbar-expand-md container-fluid">
+        <nav class="navbar fixed-top navbar-expand-md">
             <a class="nav-symbol" href="#home">
                 <img src="assets/images/coatofarmsscaled.png" alt="Norrtälje coat of arms" />
             </a>
@@ -21,19 +21,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav nav-text-align">
                     <li class="nav-item mr-3 mb-2">
-                        <a class="nav-link" href="#home">HOME</a>
+                        <a class="nav-link text-uppercase" href="#home">HOME</a>
                     </li>
                     <li class="nav-item mr-3 mb-2">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link text-uppercase" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item mr-3 mb-2">
-                        <a class="nav-link" href="#map">MAP</a>
+                        <a class="nav-link text-uppercase" href="#map">MAP</a>
                     </li>
                     <li class="nav-item mr-3 mb-2">
-                        <a class="nav-link" href="#contact">CONTACT US</a>
+                        <a class="nav-link text-uppercase" href="#contact">CONTACT US</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="#footer">SOCIAL</a>
+                        <a class="nav-link text-uppercase" href="#footer">SOCIAL</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +86,7 @@
         <div class="container">
             <div class="row" id="about">
                 <div class="col-12 my-4">
-                    <h2 class="main-headers">About Norrtälje</h2>
+                    <h2 class="main-headers text-uppercase">About Norrtälje</h2>
                 </div>
                 <div class="col-12">
                     <p>
@@ -104,25 +104,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="main-headers">Norrtälje Overview</h2>
+                    <h2 class="main-headers text-uppercase">Norrtälje Overview</h2>
                 </div>
-                <div class="row">
                 <div class="col-12">
                     <div id="map"></div>
                 </div>
                     <div class="col-3">
-                        <a class="btn btn-map" id="accommodation-btn">Accommodation</a>
+                        <a class="btn btn-map text-uppercase" id="accommodation-btn">Accommodation</a>
                     </div>
                     <div class="col-3">
-                        <a class="btn btn-map" id="restaurant-btn">Restaurants</a>
+                        <a class="btn btn-map text-uppercase" id="restaurant-btn">Restaurants</a>
                     </div>
                     <div class="col-3">
-                        <a class="btn btn-map" id="activities-btn">Activities</a>
+                        <a class="btn btn-map text-uppercase" id="activities-btn">Activities</a>
                     </div>
                     <div class="col-3">
-                        <a class="btn btn-map" id="parking-btn">Parking</a>
+                        <a class="btn btn-map text-uppercase" id="parking-btn">Parking</a>
                     </div>
-                </div>
             </div>
         </div>
         <!-- ------------------------------- map end ------------------------------- -->
@@ -134,7 +132,7 @@
         <!-- -------------------------- Info section end --------------------------- -->
         <!-- ------------------------------- contact ------------------------------- -->
         <form class="form-body my-4 container">
-            <h3 class="contact-form main-headers">Contact Us</h3>
+            <h3 class="contact-form main-headers text-uppercase">Contact Us</h3>
             <div class="row">
                 <div class="col-6 form-group">
                     <div class="form-boxes">
@@ -154,14 +152,14 @@
                     <textarea id="message" name="message" rows="10" class="form-control form-text-area" placeholder="Do you have a Question?"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-block btn-contact my-3">SEND</button>
+            <button type="submit" class="btn btn-block btn-contact my-3 text-uppercase">SEND</button>
         </form>
         <!-- ----------------------------- contact end ----------------------------- -->
         <!-- ------------------------------- footer -------------------------------- -->
-        <footer id="footer">
-            <div class="row">
+        <footer class="container-fluid" id="footer">
+            <div class="row d-flex align-items-center">
                 <div class="col-12 col-sm-4">
-                    <div class="contact-info">
+                    <div class="contact-info text-uppercase">
                             123 Norrtalje Street, Norrtalje<br />
                             (707) 663-4279<br />
                             spongebob@norrtalje.com
@@ -172,25 +170,25 @@
                 </div>
                 <div class="col-12 col-sm-4">
                     <div class="row">
-                        <div class="col-6 social-links">
+                        <div class="col-6 social-links social-left">
                             <a target="_blank" href="https://facebook.com/">
                                 <i class="fab fa-facebook-square" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook</span>
                             </a>
                         </div>
-                        <div class="col-6 social-links">
+                        <div class="col-6 social-links social-right">
                             <a target="_blank" href="https://www.instagram.com/">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                                 <span class="sr-only">Instagram</span>
                             </a>
                         </div>
-                        <div class="col-6 social-links">
+                        <div class="col-6 social-links social-left">
                             <a target="_blank" href="https://twitter.com/">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                                 <span class="sr-only">Twitter</span>
                             </a>
                         </div>
-                        <div class="col-6 social-links">
+                        <div class="col-6 social-links social-right">
                             <a target="_blank" href="https://www.tripadvisor.com/#">
                                 <i class="fab fa-tripadvisor" aria-hidden="true"></i>
                                 <span class="sr-only">Trip Advisor</span>
