@@ -12,7 +12,7 @@ body {
 
 nav {
     height: 55px;
-    background-color: blue;
+    background-color: #085394;
 }
 
 .nav-symbol img {
@@ -21,7 +21,12 @@ nav {
 }
 
 .nav-link {
-    color: yellow;
+    color: #fffb05;
+    font-size: 1.8rem;
+}
+
+.nav-link:hover {
+    color: #a1a02f;
 }
 
 .nav-text-align {
@@ -48,14 +53,15 @@ nav {
 /* ----------------------------------- map ---------------------------------- */
 
 #map{
-    height:400px;
-    width: 100%;
+    height:60vh;
+    width: 90vw;
+    max-width: 1140px;
 }
 
 /* ------------------------------ Contact form ------------------------------ */
 
 form {
-    background-color: blue;
+    background-color: #085394;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -65,7 +71,7 @@ form {
 }
 
 .contact-form {
-    color: yellow;
+    color: #fffb05;
 }
 
 .form-boxes {
@@ -75,31 +81,43 @@ form {
 /* --------------------------------- Footer --------------------------------- */
 
 footer {
-    background-color: blue;
+    background-color: #085394;
+}
+
+.contact-info {
+    color: #fffb05;
 }
 
 
 .social-links a i {
     font-size: 50px;
     text-align: center;
-    color: yellow;
-    background: blue;
+    color: #fffb05;
+    background: #085394;
 }
 
 /* --------------------------------- headers -------------------------------- */
 
 .main-headers{
     font-family: 'PT Serif', serif;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
 
 /* --------------------------------- buttons -------------------------------- */
 
 .btn-map {
-    background-color: blue;
-    color: yellow!important;
+    width: 10rem;
+    background-color: #085394;
+    color: #fffb05!important;
+    margin-top: 3%;
+}
+
+.btn-map:hover {
+    background-color: #066ec9;
 }
 
 .btn-contact {
-    background-color: rgb(124, 32, 32);
-    color: yellow!important;
+    background-color: #fffb05;
+    color: #085394!important;
 }
