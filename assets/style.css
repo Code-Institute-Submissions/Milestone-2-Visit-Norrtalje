@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap");
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: rgb(194, 194, 194);
     text-align: center;
 }
@@ -20,17 +20,13 @@ nav {
     width: 30%;
 }
 
-/* .nav-item {
-    width: auto;
-} */
-
 .nav-link {
     color: #ffd400;
     font-size: 150%;
 }
 
 .nav-link:hover {
-    color: #ffd400;
+    color: #83700f;
 }
 
 .nav-text-align {
@@ -53,13 +49,31 @@ nav {
     width: 100vw;
 }
 
-
 /* ----------------------------------- map ---------------------------------- */
 
-#map{
-    height:60vh;
+#map {
+    height: 60vh;
     width: 90vw;
     max-width: 1140px;
+}
+
+.btn-map {
+    width: 10rem;
+    background-color: #085394;
+    color: #ffd400 !important;
+    margin-top: 5%;
+}
+
+.btn-map:hover {
+    background-color: #066ec9;
+}
+
+/* ------------------------------ info section ------------------------------ */
+
+.info-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    min-height: 120px;
 }
 
 /* ------------------------------ Contact form ------------------------------ */
@@ -76,16 +90,27 @@ form {
 
 .contact-form {
     color: #ffd400;
+    margin-top: 2% !important;
 }
 
 .form-boxes {
     margin-bottom: 2rem;
 }
 
+.btn-contact {
+    background-color: #ffd400;
+    color: #085394 !important;
+}
+
+.btn-contact:hover {
+    background-color: #83700f;
+    color: #085394 !important;
+}
 /* --------------------------------- Footer --------------------------------- */
 
 footer {
     background-color: #085394;
+    margin-top: 4rem;
 }
 
 .contact-info {
@@ -94,9 +119,8 @@ footer {
 
 .social-left {
     margin-left: 5%;
-    margin-right: -20%;
+    margin-right: -22%;
 }
-
 
 .social-links a i {
     font-size: 50px;
@@ -106,28 +130,15 @@ footer {
     margin-top: 0.5rem;
 }
 
+.social-links a i:hover {
+    color: #83700f;
+    /* color: #ffee9a; */
+}
+
 /* --------------------------------- headers -------------------------------- */
 
-.main-headers{
-    font-family: 'PT Serif', serif;
+.main-headers {
+    font-family: "PT Serif", serif;
     margin-top: 5%;
     margin-bottom: 3%;
-}
-
-/* --------------------------------- buttons -------------------------------- */
-
-.btn-map {
-    width: 10rem;
-    background-color: #085394;
-    color: #ffd400!important;
-    margin-top: 3%;
-}
-
-.btn-map:hover {
-    background-color: #066ec9;
-}
-
-.btn-contact {
-    background-color: #ffd400;
-    color: #085394!important;
 }
