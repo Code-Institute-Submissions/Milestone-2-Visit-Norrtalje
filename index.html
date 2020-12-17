@@ -6,6 +6,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/style.css" />
         <title>Visit Norrtälje</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_xNMqk1zEghwvFrbJlZbHU");
+        })();
+        </script>
     </head>
     <body>
         <!-- ------------------------------- navbar -------------------------------- -->
@@ -40,6 +46,7 @@
         </nav>
         <!-- ----------------------------- navbar end ------------------------------ -->
         <!-- -------------------------------- home --------------------------------- -->
+        <div class="container-fluid" id="home">
         <div id="arrow" class="carousel slide carousel-container" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -79,6 +86,7 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+    </div>
         <!-- ------------------------------ home end ------------------------------- -->
         <!-- -------------------------------- about -------------------------------- -->
         <div class="container">
@@ -129,12 +137,12 @@
         </div>
         <!-- -------------------------- Info section end --------------------------- -->
         <!-- ------------------------------- contact ------------------------------- -->
-        <form class="form-body my-4 container">
+        <form class="form-body my-4 container" onsubmit="return sendMail(this);">
             <h3 class="contact-form main-headers text-uppercase" id="contact">Contact Us</h3>
             <div class="row">
                 <div class="col-6 form-group">
                     <div class="form-boxes">
-                        <input type="text" class="form-control" id="f-name" name="f-name" placeholder="First Name" required="" />
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First Name" required="" />
                     </div>
                     <div class="form-boxes">
                         <input type="text" class="form-control" id="l-name" name="l-name" placeholder="Last Name" required="" />
@@ -204,5 +212,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtfxprLxTkhP06LCnW3_xbRa0fIZD6PKs&libraries=places&callback=initMap"></script>
         <script src="assets/js/map.js"></script>
+        <script src="email.js"></script>
     </body>
 </html>
