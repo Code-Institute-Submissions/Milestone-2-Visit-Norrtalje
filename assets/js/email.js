@@ -1,15 +1,10 @@
 function sendMail(contactForm) {
-    emailjs.send("outlook", "rosie", {
-      "from_name": contactForm.name.value,
-      "from_email": contactForm.emailaddress.value,
-      "project_request": contactForm.projectsummary.value
-      })
-      .then(
-          function(response) {
-              console.log("SUCCESS", reponse);
-          },
-          function(error) {
-              console.log("FAILED", error);
-          });
-          return false;
+    let tempParams = {
+        from_name: document.getElementById("firstname").value,
+        from_name: document.getElementById("message").value,
+    };
+
+    emailjs.send("outlook","template_vwfbcte", tempParams).then(function(respond){
+        console.log("success",respond.status);
+    })
   }
