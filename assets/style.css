@@ -9,9 +9,14 @@ body {
 }
 
 .container-fluid {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
+
+/* .container {
+    margin: auto !important;
+    padding: auto !important;
+} */
 
 /* ------------------------------- nav section ------------------------------ */
 
@@ -66,7 +71,6 @@ nav {
 
 #map {
     height: 60vh;
-    width: 90vw;
     max-width: 1140px;
 }
 
@@ -95,6 +99,7 @@ form {
     background-color: #085394;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .form-group {
@@ -124,6 +129,11 @@ form {
 footer {
     background-color: #085394;
     margin-top: 4rem;
+}
+
+.footer-row {
+    margin: auto;
+    padding: auto;
 }
 
 .contact-info {
@@ -158,8 +168,8 @@ footer {
 
 /* ------------------------------ media queries ----------------------------- */
 
-@media screen and (max-width: 860px) {
-    .contact-info {
-        font-size: 5px;
+/* @media screen and (min-width: 768) {
+    .map-section {
+        margin: 0;
     }
-}
+} */
