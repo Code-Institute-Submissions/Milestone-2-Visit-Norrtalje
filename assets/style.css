@@ -168,8 +168,15 @@ footer {
 
 /* ------------------------------ media queries ----------------------------- */
 
-/* @media screen and (min-width: 768) {
-    .map-section {
-        margin: 0;
+@media screen and (max-width: 425px) {
+    .social-container {
+        margin-left: 25px;
     }
-} */
+}
+
+@media screen and (max-width: 320px) {
+    .btn-mini {
+        flex: auto;
+        max-width: 100%;
+    }
+}
