@@ -13,11 +13,6 @@ body {
     padding: 0;
 }
 
-/* .container {
-    margin: auto !important;
-    padding: auto !important;
-} */
-
 /* ------------------------------- nav section ------------------------------ */
 
 nav {
@@ -35,6 +30,7 @@ nav {
 .nav-link {
     color: #ffd400;
     font-size: 150%;
+    padding: 0;
 }
 
 .nav-link:hover {
@@ -45,15 +41,8 @@ nav {
     text-align: end;
 }
 
-/* .navbar-toggler-icon i {
-    color: #159da0;
-    font-size: 25px;
-} */
-
 #navbarNavDropdown {
     background-color: #085394;
-    /* padding-bottom: 0.5rem;
-    padding-top: 0.5rem; */
 }
 
 .navbar button:focus {
@@ -170,7 +159,6 @@ footer {
 
 .social-links a i:hover {
     color: #83700f;
-    /* color: #ffee9a; */
 }
 
 /* --------------------------------- headers -------------------------------- */
@@ -183,6 +171,15 @@ footer {
 
 /* ------------------------------ media queries ----------------------------- */
 
+@media screen and (max-width: 767px) {
+    .nav-symbol img {
+        margin-right: 50%;
+    }
+    .contact-info {
+        padding-top: 10px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .social-container {
         margin-left: 25px;
@@ -191,7 +188,14 @@ footer {
 
 @media screen and (max-width: 320px) {
     .btn-mini {
-        flex: auto;
-        max-width: 100%;
+        padding: 0;
+    }
+
+    .btn-map {
+        width: 9rem;
+        background-color: #085394;
+        color: #ffd400 !important;
+        margin-top: 5%;
+        font-size: 14px;
     }
 }
