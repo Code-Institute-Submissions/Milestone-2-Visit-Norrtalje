@@ -170,7 +170,7 @@ let markersOnMap = [
     {
         coords: [{ lat: 59.75798645227602, lng: 18.707302808908896 }],
         type: "accommodation",
-        content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p>",
+        content: "<h6>Åtellet Hotell</h6> <br> <p>Rating:3.7</p>",
     },
     {
         coords: [{ lat: 59.758614954555966, lng: 18.699488863378857 }],
@@ -305,19 +305,19 @@ function initMap() {
 document.getElementById("accommodation-btn").addEventListener("click", function () {
     document.getElementById("info-header").innerHTML = "Accomodation";
     document.getElementById("info-text").innerHTML =
-        "Next Stop: The Right Property for You. Big Range of Top-Rated Properties. Price Guarantee. Large selection of the hotels and better prices than competitors 5/5. Photos & Reviews. Customer Support. Easy to Modify Plans. Flexible Payment Options. Save with Secret Prices.";
+        "There is a vairied number of accommodation types available in Norrtälje from the camp site Norrtälje Camping to a high quality hotel experience at Åtellet Hotell located by the harbour, and everything in between";
 });
 document.getElementById("restaurant-btn").addEventListener("click", function () {
     document.getElementById("info-header").innerHTML = "Restaurants";
     document.getElementById("info-text").innerHTML =
-        "Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her narrative songwriting, which often centers around her personal life, has received widespread critical plaudits and media coverage.";
+        "There are a large number of restaurants of many different types located in Norrtälje ranging from traditional Swedish food to exotic Asian fare. Several of the restaurants are located in town or by the harbour";
 });
 document.getElementById("activities-btn").addEventListener("click", function () {
     document.getElementById("info-header").innerHTML = "Activities";
     document.getElementById("info-text").innerHTML =
-        "Cabbage (comprising several cultilets of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage";
+        "Norrtälje has many activities to keep you busy during your stay. There are several shopping locations around town, clubs and bars, sport centres and museums. As well as some truly beautiful parks and walkways";
 });
 document.getElementById("parking-btn").addEventListener("click", function () {
     document.getElementById("info-header").innerHTML = "Parking";
-    document.getElementById("info-text").innerHTML = "What information do I get using the blue box? When you select an area or a place at nearby, a list with all our parking facilities where we lease parking spaces";
+    document.getElementById("info-text").innerHTML = "The parking in and around Norrtälje is virtually entirely free for shorter stays. Most areas have free parking from anywhere between 1 hour and 4 hours. The three main parking areas in town all have free parking for the first 2 hours using the EasyPark parking app, which can be downloaded from the Apple Store or Google Play";
 });
