@@ -21,7 +21,7 @@ body {
 /* ------------------------------- nav section ------------------------------ */
 
 nav {
-    height: 55px;
+    height: 60px;
     background-color: #085394;
     max-width: 100vw;
     padding: 0 !important;
@@ -43,6 +43,21 @@ nav {
 
 .nav-text-align {
     text-align: end;
+}
+
+/* .navbar-toggler-icon i {
+    color: #159da0;
+    font-size: 25px;
+} */
+
+#navbarNavDropdown {
+    background-color: #085394;
+    /* padding-bottom: 0.5rem;
+    padding-top: 0.5rem; */
+}
+
+.navbar button:focus {
+    outline: none;
 }
 
 /* ------------------------------- home section ----------------------------- */
