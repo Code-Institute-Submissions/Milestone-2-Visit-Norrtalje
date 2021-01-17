@@ -408,7 +408,6 @@ function initMap(locations) {
 
     if (locations) {
         for (let i = 0; i < locations.length; i++) {
-            // console.log(`with coords: ${locations[i].coords} and just the location: ${locations[i]}`)
             marker = new google.maps.Marker({
                 position: locations[i].coords,
                 map,
@@ -439,20 +438,51 @@ function initMap(locations) {
 
 
 
-// Event Listeners for Map and Markers
+// Event Listeners adding markers to the map and adding informational text
 
 document.getElementById("accommodation-btn").addEventListener("click", function() {
     initMap(accommodation);
+    document.getElementById("info-header").innerHTML = "Accomodation";
+    document.getElementById("info-text").innerHTML =
+        "There is a vairied number of accommodation types available in Norrtälje from the camp site Norrtälje Camping to a high quality hotel experience at Åtellet Hotell located by the harbour, and everything in between";
 });
 document.getElementById("restaurant-btn").addEventListener("click", function() {
     initMap(restaurant);
+    document.getElementById("info-header").innerHTML = "Restaurants";
+    document.getElementById("info-text").innerHTML =
+        "There are a large number of restaurants of many different types located in Norrtälje ranging from traditional Swedish food to exotic Asian fare. Several of the restaurants are located in town or by the harbour";
 });
 document.getElementById("activities-btn").addEventListener("click", function() {
     initMap(activities);
+    document.getElementById("info-header").innerHTML = "Activities";
+    document.getElementById("info-text").innerHTML =
+        "Norrtälje has many activities to keep you busy during your stay. There are several shopping locations around town, clubs and bars, sport centres and museums. As well as some truly beautiful parks and walkways";
 });
 document.getElementById("parking-btn").addEventListener("click", function() {
     initMap(parking);
+    document.getElementById("info-header").innerHTML = "Parking";
+    document.getElementById("info-text").innerHTML = "The parking in and around Norrtälje is virtually entirely free for shorter stays. Most areas have free parking from anywhere between 1 hour and 4 hours. The three main parking areas in town all have free parking for the first 2 hours using the EasyPark parking app, which can be downloaded from the Apple Store or Google Play";
 });
+
+// document.getElementById("accommodation-btn").addEventListener("click", function () {
+//     document.getElementById("info-header").innerHTML = "Accomodation";
+//     document.getElementById("info-text").innerHTML =
+//         "There is a vairied number of accommodation types available in Norrtälje from the camp site Norrtälje Camping to a high quality hotel experience at Åtellet Hotell located by the harbour, and everything in between";
+// });
+// document.getElementById("restaurant-btn").addEventListener("click", function () {
+//     document.getElementById("info-header").innerHTML = "Restaurants";
+//     document.getElementById("info-text").innerHTML =
+//         "There are a large number of restaurants of many different types located in Norrtälje ranging from traditional Swedish food to exotic Asian fare. Several of the restaurants are located in town or by the harbour";
+// });
+// document.getElementById("activities-btn").addEventListener("click", function () {
+//     document.getElementById("info-header").innerHTML = "Activities";
+//     document.getElementById("info-text").innerHTML =
+//         "Norrtälje has many activities to keep you busy during your stay. There are several shopping locations around town, clubs and bars, sport centres and museums. As well as some truly beautiful parks and walkways";
+// });
+// document.getElementById("parking-btn").addEventListener("click", function () {
+//     document.getElementById("info-header").innerHTML = "Parking";
+//     document.getElementById("info-text").innerHTML = "The parking in and around Norrtälje is virtually entirely free for shorter stays. Most areas have free parking from anywhere between 1 hour and 4 hours. The three main parking areas in town all have free parking for the first 2 hours using the EasyPark parking app, which can be downloaded from the Apple Store or Google Play";
+// });
 
 
 // Initialize the Map
