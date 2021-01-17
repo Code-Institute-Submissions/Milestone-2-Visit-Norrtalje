@@ -420,6 +420,3 @@ document.getElementById("parking-btn").addEventListener("click", function () {
         "The parking in and around Norrtälje is virtually entirely free for shorter stays. Most areas have free parking from anywhere between 1 hour and 4 hours. The three main parking areas in town all have free parking for the first 2 hours using the EasyPark parking app, which can be downloaded from the Apple Store or Google Play";
 });
 
-// Initialize the Map
-initMap();
-
