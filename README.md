@@ -298,7 +298,7 @@ All of the following technologies were used to create this website:-
 ### **Content**
 <!-- *	Code was used from [Developers.Google](link)  -->
 
-With additional help from (Youtubevideo??????)
+<!-- With additional help from (Youtubevideo??????) -->
 
 <!-- The restaurant map pin was made by Nikita Golubev from [Flaticon.com](https://www.flaticon.com/) -->
 <!-- All other pin icons where made by **freepik** [Flaticon.com](https://www.flaticon.com/) -->
