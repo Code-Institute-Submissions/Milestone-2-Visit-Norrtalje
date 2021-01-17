@@ -374,65 +374,86 @@ let parking = [
             content: "<h6>Jupiter Parking Lot</h6>",
         }];
 
-window.onload = function () {
-    initMap();
-};
-
-function addMarkerInfo() {
-    for (let i = 0; i < markersOnMap.length; i++) {
-        let contentText = "<h6>" + markersOnMap[i].content + "</h6>";
-
-        const marker = new google.maps.Marker({
-            position: markersOnMap[i].coords[0],
-            icon: icons[markersOnMap[i].type].icon,
-            map: map,
-        });
-
-        const infoWindow = new google.maps.InfoWindow({
-            content: contentText,
-        });
-
-        marker.addListener("click", function () {
-            closeOtherInfo();
-            infoWindow.open(marker.get("map"), marker);
-            infoObj[0] = infoWindow;
-        });
-    }
-}
-
-function closeOtherInfo() {
-    if (infoObj.length > 0) {
-        infoObj[0].set("marker", null);
-        infoObj[0].close();
-        infoObj[0].length = 0;
-    }
-}
-
-function initMap() {
+function initMap(locations) {
+    let LatLng = {
+        lat: 59.75821547440827,
+        lng: 18.703599005553162
+    };
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 16,
-        center: centerCoords,
+        zoom: 13.5,
+        center: LatLng,
+        mapTypeId: 'satellite'
     });
 
-    addMarkerInfo();
+    //Adjust Zoom Level for devices with smaller screens
+
+    // if (window.screen.width < 768) {
+    //     var Latlng = {
+    //         lat: 59.75821547440827,
+    //         lng: 18.703599005553162
+    //     },
+    //     map = new google.maps.Map(document.getElementById("map"), {
+    //         zoom: 13.2,
+    //         center: Latlng,
+    //         mapTypeId: "satellite"
+    //     })
+    // }
+
+
+
+    labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // Iterate through the locations on the maps to place the markers on the map
+
+
+    if (locations) {
+        for (let i = 0; i < locations.length; i++) {
+            // console.log(`with coords: ${locations[i].coords} and just the location: ${locations[i]}`)
+            marker = new google.maps.Marker({
+                position: locations[i].coords,
+                map,
+                animation: google.maps.Animation.DROP
+            });
+
+            
+
+            const infowindow = new google.maps.InfoWindow({
+                content: locations[i].content,
+            });
+
+            // Close previous info window when new info window opened
+
+            google.maps.event.addListener(marker, 'click', function() {
+                if (currentInfoWindow != null) {
+                    currentInfoWindow.close();
+                }
+
+                infowindow.open(map, marker);
+                currentInfoWindow = infowindow;
+            });
+
+            var currentInfoWindow = null;
+        }
+    }
 }
 
-document.getElementById("accommodation-btn").addEventListener("click", function () {
-    document.getElementById("info-header").innerHTML = "Accomodation";
-    document.getElementById("info-text").innerHTML =
-        "There is a vairied number of accommodation types available in Norrtälje from the camp site Norrtälje Camping to a high quality hotel experience at Åtellet Hotell located by the harbour, and everything in between";
+
+
+// Event Listeners for Map and Markers
+
+document.getElementById("accommodation-btn").addEventListener("click", function() {
+    initMap(accommodation);
 });
-document.getElementById("restaurant-btn").addEventListener("click", function () {
-    document.getElementById("info-header").innerHTML = "Restaurants";
-    document.getElementById("info-text").innerHTML =
-        "There are a large number of restaurants of many different types located in Norrtälje ranging from traditional Swedish food to exotic Asian fare. Several of the restaurants are located in town or by the harbour";
+document.getElementById("restaurant-btn").addEventListener("click", function() {
+    initMap(restaurant);
 });
-document.getElementById("activities-btn").addEventListener("click", function () {
-    document.getElementById("info-header").innerHTML = "Activities";
-    document.getElementById("info-text").innerHTML =
-        "Norrtälje has many activities to keep you busy during your stay. There are several shopping locations around town, clubs and bars, sport centres and museums. As well as some truly beautiful parks and walkways";
+document.getElementById("activities-btn").addEventListener("click", function() {
+    initMap(activities);
 });
-document.getElementById("parking-btn").addEventListener("click", function () {
-    document.getElementById("info-header").innerHTML = "Parking";
-    document.getElementById("info-text").innerHTML = "The parking in and around Norrtälje is virtually entirely free for shorter stays. Most areas have free parking from anywhere between 1 hour and 4 hours. The three main parking areas in town all have free parking for the first 2 hours using the EasyPark parking app, which can be downloaded from the Apple Store or Google Play";
+document.getElementById("parking-btn").addEventListener("click", function() {
+    initMap(parking);
 });
+
+
+// Initialize the Map
+initMap();
