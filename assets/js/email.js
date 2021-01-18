@@ -1,21 +1,21 @@
 (function() {
-        emailjs.init("user_xNMqk1zEghwvFrbJlZbHU");
-        })();
+emailjs.init("user_xNMqk1zEghwvFrbJlZbHU");
+})();
+
 
 function sendMail(contactForm) {
-    let tempParams = {
-        from_name: document.getElementById("firstname").value,
-        message: document.getElementById("message").value,
-    };
-
-    emailjs.send("outlook","template_s7nocct", tempParams).then(function(respond){
-        console.log("success",respond.status);
+    emailjs.send("outlook", "Norrtalje", {
+        "from_name": contactForm.firstname.value,
+        "from_email": contactForm.email.value,
+        "message": contactForm.message.value
     })
-  }
-
-  
-<script type="text/javascript">
-   (function(){
-      emailjs.init("YOUR_USER_ID");
-   })();
-</script>
+    .then(
+        function(response) {
+            alert("SUCCESS", response);
+        },
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
+    return false;  // To block from loading a new page
+}
