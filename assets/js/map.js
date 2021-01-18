@@ -117,7 +117,7 @@ let restaurant = [
             lng: 18.70522600210995,
         },
         type: "restaurant",
-        content: "<h6>Asien Hamn</h6> <br> <p>Rating:4.1</p>",
+        content: "<h6>Asian Hamn</h6> <br> <p>Rating:4.1</p>",
     },
     {
         coords: {
