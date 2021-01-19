@@ -8,7 +8,7 @@ let accommodation = [
             lat: 59.75463586161074,
             lng: 18.716471140214868,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Granparken</h6> <br> <p>Rating:4.3</p>",
     },
     {
@@ -16,7 +16,7 @@ let accommodation = [
             lat: 59.746382872877014,
             lng: 18.6874437333132,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Hotell Roslagen</h6> <br> <p>Rating:3.7</p>",
     },
     {
@@ -24,7 +24,7 @@ let accommodation = [
             lat: 59.75798645227602,
             lng: 18.707302808908896,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Åtellet Hotell</h6> <br> <p>Rating:3.7</p>",
     },
     {
@@ -32,7 +32,7 @@ let accommodation = [
             lat: 59.758614954555966,
             lng: 18.699488863378857,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Berlings B&B</h6> <br> <p>Rating:4.9</p>",
     },
     {
@@ -40,7 +40,7 @@ let accommodation = [
             lat: 59.76107954182671,
             lng: 18.70144017043721,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Sven Fredriksson B&B</h6> <br> <p>Rating:4.4</p>",
     },
     {
@@ -48,7 +48,7 @@ let accommodation = [
             lat: 59.76304691004011,
             lng: 18.6714772427103,
         },
-        type: "accommodation",
+        title: "accommodation",
         content: "<h6>Norrtälje Camping</h6> <br> <p>Rating:4.4</p>",
     },
 ];
@@ -60,7 +60,7 @@ let restaurant = [
             lat: 59.75692732670315,
             lng: 18.69618371129288,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>ANTEP's</h6> <br> <p>Rating:4.2</p>",
     },
     {
@@ -68,7 +68,7 @@ let restaurant = [
             lat: 59.758203851800474,
             lng: 18.709756839272078,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Salt & Sea</h6> <br> <p>Rating:4.2</p>",
     },
     {
@@ -76,7 +76,7 @@ let restaurant = [
             lat: 59.75792083803483,
             lng: 18.70894949435303,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>S/S Norrtelje</h6> <br> <p>Rating:4.0</p>",
     },
     {
@@ -84,7 +84,7 @@ let restaurant = [
             lat: 59.75811278272289,
             lng: 18.708442999033014,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Den Gyllene Räven</h6> <br> <p>Rating:4.1</p>",
     },
     {
@@ -92,7 +92,7 @@ let restaurant = [
             lat: 59.75748731062395,
             lng: 18.705404056234435,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Pinchos</h6> <br> <p>Rating:4.0</p>",
     },
     {
@@ -100,7 +100,7 @@ let restaurant = [
             lat: 59.75730575857509,
             lng: 18.705408498652393,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Harry's</h6> <br> <p>Rating:4.0</p>",
     },
     {
@@ -108,7 +108,7 @@ let restaurant = [
             lat: 59.75659091174056,
             lng: 18.705591453090186,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Ed's Burgers's</h6> <br> <p>Rating:4.3</p>",
     },
     {
@@ -116,7 +116,7 @@ let restaurant = [
             lat: 59.75665339360885,
             lng: 18.70522600210995,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Asian Hamn</h6> <br> <p>Rating:4.1</p>",
     },
     {
@@ -124,7 +124,7 @@ let restaurant = [
             lat: 59.75687390092211,
             lng: 18.70414907577552,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Poke Burger</h6> <br> <p>Rating:4.5</p>",
     },
     {
@@ -132,7 +132,7 @@ let restaurant = [
             lat: 59.757192111252735,
             lng: 18.700829967871435,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Kwang Chow</h6> <br> <p>Rating:3.8</p>",
     },
     {
@@ -140,7 +140,7 @@ let restaurant = [
             lat: 59.75893086109899,
             lng: 18.703008708806884,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>På Grillen</h6> <br> <p>Rating:4.0</p>",
     },
     {
@@ -148,7 +148,7 @@ let restaurant = [
             lat: 59.75706816262207,
             lng: 18.70329558849524,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Taco Bar</h6> <br> <p>Rating:3.5</p>",
     },
     {
@@ -156,7 +156,7 @@ let restaurant = [
             lat: 59.7589454960521,
             lng: 18.70349960401706,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Lilys Kök</h6> <br> <p>Rating:3.5</p>",
     },
     {
@@ -164,7 +164,7 @@ let restaurant = [
             lat: 59.75692732670315,
             lng: 18.69618371129288,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>ANTEP's</h6> <br> <p>Rating:4.2</p>",
     },
     {
@@ -172,7 +172,7 @@ let restaurant = [
             lat: 59.75610989844251,
             lng: 18.722778964056698,
         },
-        type: "restaurant",
+        title: "restaurant",
         content: "<h6>Havspiren</h6> <br> <p>Rating:4.0</p>",
     },
 ];
@@ -184,7 +184,7 @@ let activities = [
             lat: 59.75716171517352,
             lng: 18.698004931226563,
         },
-        type: "bar",
+        title: "bar",
         content: "<h6>Kapellet</h6> <br> <p>Rating:4.4</p>",
     },
     {
@@ -192,7 +192,7 @@ let activities = [
             lat: 59.759090460443666,
             lng: 18.702219352212374,
         },
-        type: "bar",
+        title: "bar",
         content: "<h6>DG's Sportsbar</h6> <br> <p>Rating:4.0</p>",
     },
     {
@@ -200,7 +200,7 @@ let activities = [
             lat: 59.75728682442034,
             lng: 18.702591382973594,
         },
-        type: "bar",
+        title: "bar",
         content: "<h6>Vinbaren</h6> <br> <p>Rating:4.2</p>",
     },
     {
@@ -208,7 +208,7 @@ let activities = [
             lat: 59.75666693066083,
             lng: 18.703888440526757,
         },
-        type: "bar",
+        title: "bar",
         content: "<h6>Little Dublin</h6> <br> <p>Rating:3.7</p>",
     },
     {
@@ -216,7 +216,7 @@ let activities = [
             lat: 59.756935432379045,
             lng: 18.712592123409696,
         },
-        type: "park",
+        title: "park",
         content: "<h6>Societetsparken</h6> <br> <p>Rating:4.2</p>",
     },
     {
@@ -224,7 +224,7 @@ let activities = [
             lat: 59.75292287490571,
             lng: 18.729321035281842,
         },
-        type: "beach",
+        title: "beach",
         content: "<h6>Kärleksuddens Beach</h6> <br> <p>Rating:3.7</p>",
     },
     {
@@ -232,7 +232,7 @@ let activities = [
             lat: 59.75840742497105,
             lng: 18.675355689333017,
         },
-        type: "beach",
+        title: "beach",
         content: "<h6>Lommarbadet</h6> <br> <p>Rating:3.9</p>",
     },
     {
@@ -240,7 +240,7 @@ let activities = [
             lat: 59.75467589772488,
             lng: 18.7264464046818,
         },
-        type: "sailing",
+        title: "sailing",
         content: "<h6>Norrtälje Sailing Club</h6> <br> <p>Rating:4.5</p>",
     },
     {
@@ -248,7 +248,7 @@ let activities = [
             lat: 59.75711375676702,
             lng: 18.700849413815916,
         },
-        type: "shopping",
+        title: "shopping",
         content: "<h6>Norrtälje Town Center</h6>",
     },
     {
@@ -256,7 +256,7 @@ let activities = [
             lat: 59.7463776363424,
             lng: 18.6788479242845,
         },
-        type: "shopping",
+        title: "shopping",
         content: "<h6>Norrteljeporten</h6>",
     },
     {
@@ -264,7 +264,7 @@ let activities = [
             lat: 59.751404198850956,
             lng: 18.69393803555879,
         },
-        type: "shopping",
+        title: "shopping",
         content: "<h6>Flygfältet</h6>",
     },
     {
@@ -272,7 +272,7 @@ let activities = [
             lat: 59.75509488579032,
             lng: 18.69629167046601,
         },
-        type: "sport",
+        title: "sport",
         content: "<h6>Norrtelje Billiards</h6> <br> <p>Rating:4.7</p> <br>",
     },
     {
@@ -280,7 +280,7 @@ let activities = [
             lat: 59.751897034758116,
             lng: 18.69764283293879,
         },
-        type: "sport",
+        title: "sport",
         content: "<h6>Norrtälje Sportcentrum</h6> <br> <p>Rating:4.0</p>>",
     },
     {
@@ -288,7 +288,7 @@ let activities = [
             lat: 59.7704989090446,
             lng: 18.69422957505761,
         },
-        type: "sport",
+        title: "sport",
         content: "<h6>Roslagsbowling</h6> <br> <p>Rating:4.4</p>",
     },
     {
@@ -296,7 +296,7 @@ let activities = [
             lat: 59.77555542921295,
             lng: 18.6891789760667,
         },
-        type: "park",
+        title: "park",
         content: "<h6>Färsna Gård</h6> <br> <p>Rating:3.9</p>",
     },
     {
@@ -304,7 +304,7 @@ let activities = [
             lat: 59.75795270487724,
             lng: 18.702662441877123,
         },
-        type: "cinema",
+        title: "cinema",
         content: "<h6>Royal Svenska Bio</h6> <br> <p>Rating:4.1</p>",
     },
     {
@@ -312,7 +312,7 @@ let activities = [
             lat: 59.7548853079895,
             lng: 18.700931221384575,
         },
-        type: "sport",
+        title: "sport",
         content: "<h6>Norrtälje Bathhouse</h6> <br> <p>Rating:4.4</p>",
     },
 ];
@@ -325,7 +325,7 @@ let parking = [
             lat: 59.7592425446848,
             lng: 18.701557662031693,
         },
-        type: "parking",
+        title: "parking",
         content: "<h6>Tor Parking Lot</h6>",
     },
     {
@@ -333,7 +333,7 @@ let parking = [
             lat: 59.7583820400463,
             lng: 18.70698108862644,
         },
-        type: "parking",
+        title: "parking",
         content: "<h6>Vulkanus Parking Lot</h6>",
     },
     {
@@ -341,7 +341,7 @@ let parking = [
             lat: 59.75693453203078,
             lng: 18.69852408373768,
         },
-        type: "parking",
+        title: "parking",
         content: "<h6>Jupiter Parking Lot</h6>",
     },
 ];
