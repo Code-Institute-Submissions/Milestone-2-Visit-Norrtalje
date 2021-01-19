@@ -9,7 +9,7 @@ let accommodation = [
                 lng: 18.716471140214868,
             },
             title: "accommodation",
-            content: "<h6>Granparken</h6><p>Gjuterivägen 10, 761 40 Norrtälje</p><p>+4617610354</p><p>http://granparken.com/</p>",
+            content: "<h6>Granparken</h6><p>Gjuterivägen 10, 761 40 Norrtälje</p><p>+4617610354</p><p><a href='http://granparken.com/' target='_blank'>www.granparken.com/</a></p>",
         },
         {
             coords: {
@@ -17,7 +17,7 @@ let accommodation = [
                 lng: 18.6874437333132,
             },
             title: "accommodation",
-            content: "<h6>Hotell Roslagen</h6><p>Stockholmsvägen 53, 761 43 Norrtälje</p><p>+4617617180</p><p>http://www.hotellroslagen.se/</p>",
+            content: "<h6>Hotell Roslagen</h6><p>Stockholmsvägen 53, 761 43 Norrtälje</p><p>+4617617180</p><p><a href='http://www.hotellroslagen.se/' target='_blank'>www.hotellroslagen.se</a></p>",
         },
         {
             coords: {
@@ -25,7 +25,7 @@ let accommodation = [
                 lng: 18.707302808908896,
             },
             title: "accommodation",
-            content: "<h6>Åtellet Hotell</h6><p>Sjötullsgatan 10, 761 30 Norrtälje</p><p>+46176700450</p><p>http://www.atellet.se/</p>",
+            content: "<h6>Åtellet Hotell</h6><p>Sjötullsgatan 10, 761 30 Norrtälje</p><p>+46176700450</p><p><a href='http://www.atellet.se/' target='_blank'>www.atellet.se</a></p>",
         },
         {
             coords: {
@@ -33,7 +33,7 @@ let accommodation = [
                 lng: 18.699488863378857,
             },
             title: "accommodation",
-            content: "<h6>Berlings B&B</h6><br> <p>Hantverkaregatan 19, 761 30 Norrtälje</p><p>+46704888786</p><p>http://www.berglingsbedandbreakfast.com/</p>",
+            content: "<h6>Berlings B&B</h6><br> <p>Hantverkaregatan 19, 761 30 Norrtälje</p><p>+46704888786</p><p><a href='http://www.berglingsbedandbreakfast.com/' target='_blank'>www.berglingsbedandbreakfast.com</a></p>",
         },
         {
             coords: {
@@ -41,7 +41,7 @@ let accommodation = [
                 lng: 18.70144017043721,
             },
             title: "accommodation",
-            content: "<h6>Sven Fredriksson B&B</h6><p>Vasagatan 4G, 761 31 Norrtälje</p><p>+46702094243</p><p>http://www.svenfredriksson.com/</p>",
+            content: "<h6>Sven Fredriksson B&B</h6><p>Vasagatan 4G, 761 31 Norrtälje</p><p>+46702094243</p><p><a href='http://www.svenfredriksson.com/' target='_blank'>www.svenfredriksson.com</a></p>",
         },
         {
             coords: {
@@ -49,8 +49,9 @@ let accommodation = [
                 lng: 18.6714772427103,
             },
             title: "accommodation",
-            content: "<h6>Norrtälje Camping</h6><p>Lommarvägen 42, 761 52 Norrtälje</p><p>+46176209210</p><p>http://www.norrtaljecamping.com/</p>",}
-        ];
+            content: "<h6>Norrtälje Camping</h6><p>Lommarvägen 42, 761 52 Norrtälje</p><p>+46176209210</p><p><a href='http://www.norrtaljecamping.com/' target='_blank'>www.norrtaljecamping.com</a></p>",
+        }
+    ];
     
     // Array of restaurants
     let restaurant = [
@@ -60,7 +61,7 @@ let accommodation = [
                 lng: 18.69618371129288,
             },
             title: "restaurant",
-            content: "<h6>ANTEP's</h6><p>Esplanaden 5, 761 45 Norrtälje</p><p>+4617610130</p><p>http://www.anteps.se/</p>",
+            content: "<h6>ANTEP's</h6><p>Esplanaden 5, 761 45 Norrtälje</p><p>+4617610130</p><p><a href='http://www.anteps.se/' target='_blank'>www.anteps.se</a></p>",
         },
         {
             coords: {
@@ -68,7 +69,7 @@ let accommodation = [
                 lng: 18.709756839272078,
             },
             title: "restaurant",
-            content: "<h6>Salt & Sea</h6><p>Ångbåtsgatan 2, 761 32 Norrtälje</p><p>+4617655500</p><phttp://saltandsea.se/</p>",
+            content: "<h6>Salt & Sea</h6><p>Ångbåtsgatan 2, 761 32 Norrtälje</p><p>+4617655500</p><p><a href='http://saltandsea.se/' target='_blank'>www.saltandsea.se</a></p>",
         },
         {
             coords: {
@@ -76,7 +77,7 @@ let accommodation = [
                 lng: 18.70894949435303,
             },
             title: "restaurant",
-            content: "<h6>S/S Norrtelje</h6><p>Hamnpromenaden 2, 761 33 Norrtälje</p><p>+4617619140</p><p>https://www.ssnorrtelje.se/</p>",
+            content: "<h6>S/S Norrtelje</h6><p>Hamnpromenaden 2, 761 33 Norrtälje</p><p>+4617619140</p><p><a href='https://www.ssnorrtelje.se/' target='_blank'>www.ssnorrtelje.se</a></p>",
         },
         {
             coords: {
@@ -84,7 +85,7 @@ let accommodation = [
                 lng: 18.708442999033014,
             },
             title: "restaurant",
-            content: "<h6>Den Gyllene Räven</h6><p>Hamnplan 1, 761 30 Norrtälje</p><p>+4617657771</p><p>https://dengylleneraven.se/</p>",
+            content: "<h6>Den Gyllene Räven</h6><p>Hamnplan 1, 761 30 Norrtälje</p><p>+4617657771</p><p>+4617619140</p><p><a href='https://dengylleneraven.se/' target='_blank'>www.dengylleneraven.se</a></p>",
         },
         {
             coords: {
@@ -92,7 +93,7 @@ let accommodation = [
                 lng: 18.705404056234435,
             },
             title: "restaurant",
-            content: "<h6>Pinchos</h6><br> <p>Lilla Brogatan 4, 761 30 Norrtälje</p><p>+46709261694</p><p>http://www.pinchos.se/</p>",
+            content: "<h6>Pinchos</h6><br> <p>Lilla Brogatan 4, 761 30 Norrtälje</p><p>+46709261694</p><p><a href='http://www.pinchos.se/' target='_blank'>www.pinchos.se</a></p>",
         },
         {
             coords: {
@@ -100,7 +101,7 @@ let accommodation = [
                 lng: 18.705408498652393,
             },
             title: "restaurant",
-            content: "<h6>Harry's</h6><p>Lilla Brogatan 2, 761 30 Norrtälje</p><p>+4617619900</p><p>https://www.harrys.se/restauranger/norrtalje/</p>",
+            content: "<h6>Harry's</h6><p>Lilla Brogatan 2, 761 30 Norrtälje</p><p>+4617619900</p><p><a href='https://www.harrys.se/restauranger/norrtalje/' target='_blank'>www.harrys.se</a></p>",
         },
         {
             coords: {
@@ -108,7 +109,7 @@ let accommodation = [
                 lng: 18.705591453090186,
             },
             title: "restaurant",
-            content: "<h6>Ed's Burgers's</h6><p>Tillfällegatan 4, 761 30 Norrtälje</p><p>+46176277792</p><p>http://www.edsburgers.se/</p>",
+            content: "<h6>Ed's Burgers's</h6><p>Tillfällegatan 4, 761 30 Norrtälje</p><p>+46176277792</p><p><a href='http://www.edsburgers.se/' target='_blank'>www.edsburgers.se</a></p>",
         },
         {
             coords: {
@@ -116,7 +117,7 @@ let accommodation = [
                 lng: 18.70522600210995,
             },
             title: "restaurant",
-            content: "<h6>Asian Hamn</h6><p>Posthusgatan 7, 761 30 Norrtälje</p><p>+46703737890</p><p>http://www.asianhamn.se/</p>",
+            content: "<h6>Asian Hamn</h6><p>Posthusgatan 7, 761 30 Norrtälje</p><p>+46703737890</p><p><a href='http://www.asianhamn.se/' target='_blank'>www.asianhamn.se</a></p>",
         },
         {
             coords: {
@@ -124,7 +125,7 @@ let accommodation = [
                 lng: 18.70414907577552,
             },
             title: "restaurant",
-            content: "<h6>Poke Burger</h6><p>Posthusgatan 5, 761 30 Norrtälje</p><p>+468261103</p><p>http://www.pokeburger.se/</p>",
+            content: "<h6>Poke Burger</h6><p>Posthusgatan 5, 761 30 Norrtälje</p><p>+468261103</p><p><a href='http://www.pokeburger.se/' target='_blank'>www.pokeburger.se</a></p>",
         },
         {
             coords: {
@@ -132,7 +133,7 @@ let accommodation = [
                 lng: 18.700829967871435,
             },
             title: "restaurant",
-            content: "<h6>Kwang Chow</h6><p>Tullportsgatan 12, 761 30 Norrtälje</p><p>+46176223950</p><p>http://kinarestaurang.se/</p>",
+            content: "<h6>Kwang Chow</h6><p>Tullportsgatan 12, 761 30 Norrtälje</p><p>+46176223950</p><p><a href='http://kinarestaurang.se/' target='_blank'>www.kinarestaurang.se</a></p>",
         },
         {
             coords: {
@@ -140,7 +141,7 @@ let accommodation = [
                 lng: 18.703008708806884,
             },
             title: "restaurant",
-            content: "<h6>På Grillen</h6><p>Stora Brogatan 7A, 761 30 Norrtälje</p><p>+4617610733</p><p>http://www.pagrillen.se/</p>",
+            content: "<h6>På Grillen</h6><p>Stora Brogatan 7A, 761 30 Norrtälje</p><p>+4617610733</p><p><a href='http://www.pagrillen.se/' target='_blank'>www.pagrillen.se</a></p>",
         },
         {
             coords: {
@@ -148,7 +149,7 @@ let accommodation = [
                 lng: 18.70329558849524,
             },
             title: "restaurant",
-            content: "<h6>Taco Bar</h6><p>Posthusgatan 1, 761 30 Norrtälje</p><p>+46176206995</p><p>http://www.tacobar.se/</p>",
+            content: "<h6>Taco Bar</h6><p>Posthusgatan 1, 761 30 Norrtälje</p><p>+46176206995</p><p><a href='http://www.tacobar.se/' target='_blank'>www.tacobar.se</a></p>",
         },
         {
             coords: {
@@ -164,7 +165,7 @@ let accommodation = [
                 lng: 18.722778964056698,
             },
             title: "restaurant",
-            content: "<h6>Havspiren</h6><p>Badstugatan 10, 761 40 Norrtälje</p><p>+4617616220</p><p>http://www.havspiren.se/</p>",
+            content: "<h6>Havspiren</h6><p>Badstugatan 10, 761 40 Norrtälje</p><p>+4617616220</p><p><a href='http://www.havspiren.se/' target='_blank'>www.havspiren.se</a></p>",
         },
     ];
     
@@ -176,7 +177,7 @@ let accommodation = [
                 lng: 18.698004931226563,
             },
             title: "bar",
-            content: "<h6>Kapellet</h6><p>Sports Bar</p><p>Tullportsgatan 24, 761 30 Norrtälje</p><p>+46176224244</p><p>http://www.kapelletnorrtalje.se/</p>",
+            content: "<h6>Kapellet</h6><p>Sports Bar</p><p>Tullportsgatan 24, 761 30 Norrtälje</p><p>+46176224244</p><p><a href='http://www.kapelletnorrtalje.se' target='_blank'>www.kapelletnorrtalje</a></p>",
         },
         {
             coords: {
@@ -184,7 +185,7 @@ let accommodation = [
                 lng: 18.702219352212374,
             },
             title: "bar",
-            content: "<h6>DG's Sportsbar</h6><p>Sprts Bar</p><p>Danskes gränd 6, 761 30 Norrtälje</p><p>+4617615908</p><p>https://www.dgssportbar.se/startsida</p>",
+            content: "<h6>DG's Sportsbar</h6><p>Sprts Bar</p><p>Danskes gränd 6, 761 30 Norrtälje</p><p>+4617615908</p><p><a href='https://www.dgssportbar.se/startsida' target='_blank'>www.dgssportbar.se</a></p>",
         },
         {
             coords: {
@@ -200,7 +201,7 @@ let accommodation = [
                 lng: 18.703888440526757,
             },
             title: "bar",
-            content: "<h6>Little Dublin</h6><p>Pub</p><p>Posthusgatan 8, 761 30 Norrtälje</p><p>+4617610240</p><p>http://www.littledublin.se/</p>",
+            content: "<h6>Little Dublin</h6><p>Pub</p><p>Posthusgatan 8, 761 30 Norrtälje</p><p>+4617610240</p><p><a href='http://www.littledublin.se/' target='_blank'>www.littledublin.se</a></p>",
         },
         {
             coords: {
@@ -232,7 +233,7 @@ let accommodation = [
                 lng: 18.7264464046818,
             },
             title: "sailing",
-            content: "<h6>Norrtälje Segelsällskap</h6><p>Sailing Club</p><p>Villagatan 2B, 761 40 Norrtälje</p><p>+4617615226</p><p>http://www.norrtaljess.se/</p>",
+            content: "<h6>Norrtälje Segelsällskap</h6><p>Sailing Club</p><p>Villagatan 2B, 761 40 Norrtälje</p><p>+4617615226</p><p><a href='http://www.norrtaljess.se/' target='_blank'>www.norrtaljess.se</a></p>",
         },
         {
             coords: {
@@ -248,7 +249,7 @@ let accommodation = [
                 lng: 18.6788479242845,
             },
             title: "shopping",
-            content: "<h6>Norrteljeporten</h6><p>Shopping Center</p><p>Astrid Lindgrens gata 1, 761 46 Norrtälje</p><p>https://norrteljeporten.com/</p>",
+            content: "<h6>Norrteljeporten</h6><p>Shopping Center</p><p>Astrid Lindgrens gata 1, 761 46 Norrtälje</p><p><a href='https://norrteljeporten.com/' target='_blank'>www.norrteljeporten.com</a></p>",
         },
         {
             coords: {
@@ -256,7 +257,7 @@ let accommodation = [
                 lng: 18.69393803555879,
             },
             title: "shopping",
-            content: "<h6>Flygfältet</h6><p>Shopping Center</p><p>Radarvägen, 761 30 Norrtälje</p><p>https://flygfaltetshandelsomrade.se/</p>",
+            content: "<h6>Flygfältet</h6><p>Shopping Center</p><p>Radarvägen, 761 30 Norrtälje</p><p><a href='https://flygfaltetshandelsomrade.se/' target='_blank'>www.flygfaltetshandelsomrade.se</a></p>",
         },
         {
             coords: {
@@ -280,7 +281,7 @@ let accommodation = [
                 lng: 18.69422957505761,
             },
             title: "sport",
-            content: "<h6>Roslagsbowling</h6><p>Bowling Alley</p><p>Vårgatan 1, 761 50 Norrtälje</p><p>+4617655559</p><p>http://www.roslagsbowling.se/</p>",
+            content: "<h6>Roslagsbowling</h6><p>Bowling Alley</p><p>Vårgatan 1, 761 50 Norrtälje</p><p>+4617655559</p><p><a href='http://www.roslagsbowling.se/' target='_blank'>www.roslagsbowling.se</a></p>",
         },
         {
             coords: {
@@ -288,7 +289,7 @@ let accommodation = [
                 lng: 18.6891789760667,
             },
             title: "park",
-            content: "<h6>Färsna Gård</h6><p>Open Farm</p><p>Färsna gård 1, 761 50 Norrtälje</p><p>+4617618402</p><p>http://www.farsnagard.se/</p>",
+            content: "<h6>Färsna Gård</h6><p>Open Farm</p><p>Färsna gård 1, 761 50 Norrtälje</p><p>+4617618402</p><p><a href='http://www.farsnagard.se/' target='_blank'>www.farsnagard.se</a></p>",
         },
         {
             coords: {
@@ -296,7 +297,7 @@ let accommodation = [
                 lng: 18.702662441877123,
             },
             title: "cinema",
-            content: "<h6>Royal Svenska Bio</h6><p>Cinema</p><p>Stora Brogatan 3, 761 30 Norrtälje</p><p>http://www.svenskabio.se/</p>",
+            content: "<h6>Royal Svenska Bio</h6><p>Cinema</p><p>Stora Brogatan 3, 761 30 Norrtälje</p><p><a href='http://www.svenskabio.se/' target='_blank'>www.svenskabio.se</a></p>",
         },
         {
             coords: {
@@ -355,6 +356,7 @@ function initMap(locations) {
         for (let i = 0; i < locations.length; i++) {
             let marker = new google.maps.Marker({
                 position: locations[i].coords,
+                icon: locations[i].pin,
                 map: map,
                 animation: google.maps.Animation.DROP,
             });
