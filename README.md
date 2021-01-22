@@ -55,29 +55,30 @@ The website is simple to navigate and uses a single page style making navigation
 
 #### **Design Differences**
 
-<!-- There are some minor differences from the original conception and the final website. -->
-<!-- * I originally only planned for two different screen size layouts but added an extra layout for tablets as neither of the layouts I had worked quite right on tablets. -->
-<!-- * I also added buttons to each class rather than having a single button for all classes to make navigation easier for customers. -->
-<!-- * The membership section was originally going to have an image background, but once it was implemented, I felt that a cleaner simpler background worked better. -->
-<!-- * Originally I had the membership section above the testimonies section, this was changed to give the layout a more methodical feel. -->
+There are some minor differences from the original conception and the final website.
+* I decided to remove the find out more button from the home carousel because the link lead to the about section directly underneath the home section and it felt an unnessasary addition.
+* For similar reasons I also removed the info section from the main nav. The info only appears after pressing one of the map buttons so it could of been a link to nothing in some cases.
+* I added an additional "parking" button to the map buttons, parking is an important part of travel and I felt this needeed to be added to give a better experience.
 
 ### **styling**
 
 #### *Framework*
-<!-- Bootstrap and jQuery have both been used to form the structural layout of this website. -->
+Bootstrap and jQuery have both been used to form the structural layout of this website.
 
 #### *Fonts*
-<!-- Throughout the website Open Sans is used in various forms -->
+The Google font Roboto had been used exculively on the website
 
 #### *Colors*
-* There are Five non-image colors used on the website:
+* There are six non-image colors used on the website:
 
     <!-- [Colors](assets/readme-files/ColorPalette-Coolors.png) -->
-    <!-- *   #00ffe7 has been used for the Headers and Highlights -->
-    <!-- *   #159da0 has been used for the Headers and Nav -->
-    <!-- *   #ffffff has been used for the Main Text -->
-    <!-- *   #293130 has been used for the Main Background -->
-    <!-- *   #212525 has been used for the Section Backgrounds -->
+    *   #ffd400 has been used for the Headers on blue backgrounds
+    *   #085394 has been used for the Nav, Footer and containers
+    *   #000000 has been used for the Main Text
+    *   #cccccc has been used for the Main Background
+    *   #066ec9 has been used for the blue hover response color
+    *   #83700f has been used for the yellow hover response color
+
 
 ### **User Stories**
 
