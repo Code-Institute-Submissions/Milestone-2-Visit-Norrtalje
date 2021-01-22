@@ -55,39 +55,35 @@ The website is simple to navigate and uses a single page style making navigation
 
 #### **Design Differences**
 
-There are some minor differences from the original conception and the final website.
-* I originally only planned for two different screen size layouts but added an extra layout for tablets as neither of the layouts I had worked quite right on tablets.
-* I also added buttons to each class rather than having a single button for all classes to make navigation easier for customers.
-* The membership section was originally going to have an image background, but once it was implemented, I felt that a cleaner simpler background worked better.
-* Originally I had the membership section above the testimonies section, this was changed to give the layout a more methodical feel.
+<!-- There are some minor differences from the original conception and the final website. -->
+<!-- * I originally only planned for two different screen size layouts but added an extra layout for tablets as neither of the layouts I had worked quite right on tablets. -->
+<!-- * I also added buttons to each class rather than having a single button for all classes to make navigation easier for customers. -->
+<!-- * The membership section was originally going to have an image background, but once it was implemented, I felt that a cleaner simpler background worked better. -->
+<!-- * Originally I had the membership section above the testimonies section, this was changed to give the layout a more methodical feel. -->
 
 ### **styling**
 
 #### *Framework*
-Bootstrap and jQuery have both been used to form the structural layout of this website.
+<!-- Bootstrap and jQuery have both been used to form the structural layout of this website. -->
 
 #### *Fonts*
-Throughout the website Open Sans is used in various forms
+<!-- Throughout the website Open Sans is used in various forms -->
 
 #### *Colors*
 * There are Five non-image colors used on the website:
 
-    <!--![Colors](assets/readme-files/ColorPalette-Coolors.png)
-    *   #00ffe7 has been used for the Headers and Highlights
-    *   #159da0 has been used for the Headers and Nav
-    *   #ffffff has been used for the Main Text
-    *   #293130 has been used for the Main Background
-    *   #212525 has been used for the Section Backgrounds
-
-#### *Icons*
-<!-- Map pin icons made by **icongeek26** from [Flaticon.com](https://www.flaticon.com/)
-All icons that appear on this page are sourced from [FontAwesome](https://fontawesome.com/) -->
+    <!-- [Colors](assets/readme-files/ColorPalette-Coolors.png) -->
+    <!-- *   #00ffe7 has been used for the Headers and Highlights -->
+    <!-- *   #159da0 has been used for the Headers and Nav -->
+    <!-- *   #ffffff has been used for the Main Text -->
+    <!-- *   #293130 has been used for the Main Background -->
+    <!-- *   #212525 has been used for the Section Backgrounds -->
 
 ### **User Stories**
 
 * **First Time Visitor Goals**
 
-	* *As a First Time Visitor*, I would like to know what the company does upon opening the site.
+	<!-- * *As a First Time Visitor*, I would like to know what the company does upon opening the site. -->
 	
     * *As a First Time Visitor*, I want to be able to navigate the website simply and easily.
 
@@ -131,12 +127,12 @@ All icons that appear on this page are sourced from [FontAwesome](https://fontaw
 
 *	The site has been designed to be responsive across all devices
 
-*	The page has a **permanent sticky??????** navbar which navigates to the top of each section of the page.
+*	The page has a permanent sticky navbar which navigates to the top of each section of the page.
 *	The navbar is styled differently for different screen sizes, changing from a three line “hamburger” dropdown nav on mobile to a traditional full screen navbar on larger screens
 *	The map section has multiple interactive buttons that produce pins on the map locating the particular subject the visitor is searching for
 *	The info section is also connected to the map buttons, the content changes depending on subject of the button
 *	The Contact section is a functioning contact form which sends an email to the bureau
-*	The footer displays the address, coat of arms and social media links
+*	The footer displays the address, the Norrtälje coat of arms and social media links
 *	On smaller devices the footer becomes a single vertical column
 
 
@@ -160,7 +156,7 @@ All of the following technologies were used to create this website:-
 *	[GoogleFonts](https://fonts.google.com/) has been used to style the font of the text throughout the website
 *	[FontAwesome](https://fontawesome.com/) was used to add icons to the exercise class headers
 *	[Bootstrap]( https://getbootstrap.com/) was used for layout aesthetics, including grid styling and device responsiveness
-*	[Gimp]( https://www.gimp.org/) was used to create the company logo
+*	[Gimp]( https://www.gimp.org/) was used to size the images
 *	[GitHub]( https://github.com/) was used to host the website
 *	[Gitpod]( https://www.gitpod.io/) was used to code the website
 *	[Balsamiq]( https://balsamiq.com/) was used to create the wireframes of the project
@@ -183,16 +179,16 @@ All of the following technologies were used to create this website:-
     *   On the carousel there is a ‘more info’ button directing the user to the about section
 
 * *As a First Time Visitor*, I want to be able to navigate the website simply and easily.
-    *	The website has a **sticky????** navigation menu that **is always available to?????** allow quick access to each section of the site.
-    *	Each section is clearly marked with a header
-    *	The home section has a ‘more info’ button which directs the customer to the About section where they can find out more about the town
+    *	The website has a sticky navigation menu that is always available to allow quick access to each section of the site.
+    <!-- *	Each section is clearly marked with a header -->
+    <!-- *	The home section has a ‘more info’ button which directs the customer to the About section where they can find out more about the town -->
 
 * *As a First Time Visitor*, I want to access the site across all devices.
     *	The website is responsive across all devices
-    *	The website has three different layouts depending on what size screen the customer is using
+    <!-- *	The website has three different layouts depending on what size screen the customer is using -->
 
 * *As a First Time Visitor*, I want to find out about Norrtälje.
-    *	The home carousel has some information on the town, as does the about section, the about section has a more info button and there is a navbar button that also directs the user to the about section
+    *	The about section has some information on the town and the navbar has a button that directs the user to the about section
 
 * *As a First Time Visitor*, I want to find where Norrtälje is situated.
     *   The about section explains where Norrtälje is located
@@ -225,11 +221,11 @@ All of the following technologies were used to create this website:-
 
 *    The HTML was Validted at [W3C Markup Validation Service](https://validator.w3.org/). 
 
-![HTML Validation](screenshot)
+<!-- ![HTML Validation](screenshot) -->
 
 *    The CSS was validate at [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/).
 
-![CSS Validation](screenshot)
+<!-- ![CSS Validation](screenshot) -->
 
 ### **Manual Testing**
 
@@ -263,14 +259,11 @@ All of the following technologies were used to create this website:-
     
 #### *Issues Found*
 
-*   I had a non-website issue during this poject. This is the second repository of this project as I have been frozen out of the original repository by a GitHub bug.
-    *   The issue was only solved by transfering all possible data to a second repository.
+<!-- *   An issue was found with the carousel on mobile devices, The resizing would make the right hand button drop below the rest of the carousel.
+    *   The issue was resolved with some changes to button and text sizes -->
 
-*   An issue was found with the carousel on mobile devices, The resizing would make the right hand button drop below the rest of the carousel.
-    *   The issue was resolved with some changes to button and text sizes
-
-*   The address text in the footer would show on too many lines on smaller devices
-    *   The issue was fix with a design change rather than a bug fix, the address now moves to a dropdown list on smaller devices
+<!-- *   The address text in the footer would show on too many lines on smaller devices
+    *   The issue was fix with a design change rather than a bug fix, the address now moves to a dropdown list on smaller devices -->
 
 ---
 
@@ -300,19 +293,9 @@ All of the following technologies were used to create this website:-
 
 <!-- With additional help from (Youtubevideo??????) -->
 
-<!-- The restaurant map pin was made by Nikita Golubev from [Flaticon.com](https://www.flaticon.com/) -->
-<!-- All other pin icons where made by **freepik** [Flaticon.com](https://www.flaticon.com/) -->
-
- 
-
-
 ### **Media**
 
 * The photos used in this site were obtained from [Norrtälje Kummun]( https://www.instagram.com/norrtaljekommun/?hl=en/) 
-
-* The additional photos used in this site were obtained from [Pixabay](https://pixabay.com/)  
-    * With special mention to:
-
 
 *   The coat of arms image used to as a logo for the site was obtained from 
     [SearchPNG.com]( https://www.searchpng.com/)
