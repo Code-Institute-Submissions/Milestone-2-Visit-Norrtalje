@@ -6,6 +6,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: rgb(194, 194, 194);
     text-align: center;
+    overflow-x: hidden !important;
 }
 
 .container-fluid {
@@ -149,7 +150,7 @@ footer {
 
 .footer-row {
     margin: auto;
-    padding: auto;
+    padding: 0;
 }
 
 .contact-info {
