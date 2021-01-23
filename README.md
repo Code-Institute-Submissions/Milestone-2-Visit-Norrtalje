@@ -56,10 +56,10 @@ you can find a full size PDF of the Wireframes [here](assets/readme-files/VisitN
 #### **Design Differences**
 
 There are some minor differences from the original conception and the final website.
-* I decided to remove the find out more button from the home carousel because the link lead to the about section directly underneath the home section and it felt an unnessasary addition.
+* I decided to remove the find out more button from the home carousel because the link lead to the about section directly underneath the home section and it felt an unnecessary addition.
 * For similar reasons I also removed the info section from the main nav. The info only appears after pressing one of the map buttons so it could of been a link to nothing in some cases.
-* I moved the Header to the middle of the Home carousel, made it white and removed it from one of the images for astetictal reasons.
-* I added an additional "parking" button to the map buttons, parking is an important part of travel and I felt this needeed to be added to give a better experience.
+* I moved the Header to the middle of the Home carousel, made it white and removed it from one of the images for ascetical reasons.
+* I added an additional "parking" button to the map buttons, parking is an important part of travel and I felt this needed to be added to give a better experience.
 
 ### **styling**
 
@@ -67,7 +67,7 @@ There are some minor differences from the original conception and the final webs
 Bootstrap and jQuery have both been used to form the structural layout of this website.
 
 #### *Fonts*
-The Google font Roboto had been used exculively on the website
+The Google font Roboto had been used exclusively on the website
 
 #### *Colors*
 * There are six non-image colors used on the website:
@@ -260,10 +260,10 @@ All of the following technologies were used to create this website:-
     
 #### *Issues Found*
 
-*   An issue was found with the carousel on mobile devices, The resizing would make the text too large and distort the carousel.
+*   An issue was found with the carousel on mobile devices, the resizing would make the text too large and distort the carousel.
     *   The issue was resolved with some changes to text sizes in the media queries
 
-*   JSHint found a missing semi-colon in my Javascript.
+*   JSHint found a missing semi-colon in my JavaScript.
     *   The issue was fixed by adding the semi-colon
 
 *   I was unable to make EmailJS function using the way I had been taught by Code Institute.
@@ -285,7 +285,7 @@ All of the following technologies were used to create this website:-
 1. Navigate to the GitHub [Repository:](https://github.com/RyanSyme/Milestone-2-Visit-Norrtalje)
 2. Click the **Code** drop down menu.
 3. Download the ZIP file and unpack locally
-4. Open a code editor of your choice and open the unziped file using the code editor.
+4. Open a code editor of your choice and open the unzipped file using the code editor.
 5. Click **Save** and save to your local device
 
 ---
@@ -299,7 +299,7 @@ All of the following technologies were used to create this website:-
 
 ### **Media**
 
-* The photos used in this site were obtained from [Norrtälje Kummun]( https://www.instagram.com/norrtaljekommun/?hl=en/) 
+* The photos used in this site were obtained from [Norrtälje Kommun]( https://www.instagram.com/norrtaljekommun/?hl=en/) 
 
 *   The coat of arms image used to as a logo for the site was obtained from 
     [SearchPNG.com]( https://www.searchpng.com/)
@@ -310,6 +310,7 @@ All of the following technologies were used to create this website:-
 *	I received design inspiration from:
 
     * **Matt Rudge** at [Code Institute](https://courses.codeinstitute.net/login) 
+    
     * [Developers.Google](https://developers.google.com/maps/documentation/javascript/tutorials) 
     * [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) 
 
