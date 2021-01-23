@@ -4,7 +4,7 @@
 
 ---
 
-<!-- ![Visit Norrtälje](Screenshot) -->
+![Visit Norrtälje](assets/readme-files/visit_norrtalje_multi_transparent.png)
 This webpage has been created to showcase the skills I have learned in the interactive frontend section of the Code Institute Full Stack Web Developer course; this is the second of four projects that I will be creating for the course.
 For this project I have chosen to create a tourist bureau web page advertising the coastal town of Norrtälje in Sweden.
 The reason for this selection is that Norrtälje is the town that I live in and it will allow me to show my abilities to create a web page for a commercial entity using HTML, CSS and UX design techniques, and introduce interactive elements using JavaScript.
@@ -49,15 +49,16 @@ Norrtälje is an old town with a large number of restaurants and a newly built m
 The website is simple to navigate and uses a single page style making navigation with a mobile particularly easy. The font and colours have been chosen for their traditional links to Norrtälje and make it clear and attractive to read through the website.
 
 ### **Wireframes**
-<!-- ![Wireframes](screenshot) -->
+![Wireframes](assets/readme-files/wireframes.png)
 
-<!-- you can find a full size PDF of the Wireframes [here](link) -->
+you can find a full size PDF of the Wireframes [here](assets/readme-files/VisitNorrtaljeWireframes.pdf)
 
 #### **Design Differences**
 
 There are some minor differences from the original conception and the final website.
 * I decided to remove the find out more button from the home carousel because the link lead to the about section directly underneath the home section and it felt an unnessasary addition.
 * For similar reasons I also removed the info section from the main nav. The info only appears after pressing one of the map buttons so it could of been a link to nothing in some cases.
+* I moved the Header to the middle of the Home carousel, made it white and removed it from one of the images for astetictal reasons.
 * I added an additional "parking" button to the map buttons, parking is an important part of travel and I felt this needeed to be added to give a better experience.
 
 ### **styling**
@@ -71,7 +72,7 @@ The Google font Roboto had been used exculively on the website
 #### *Colors*
 * There are six non-image colors used on the website:
 
-    <!-- [Colors](assets/readme-files/ColorPalette-Coolors.png) -->
+    ![Colors](assets/readme-files/coolors.co.png)
     *   #ffd400 has been used for the Headers on blue backgrounds
     *   #085394 has been used for the Nav, Footer and containers
     *   #000000 has been used for the Main Text
@@ -84,8 +85,6 @@ The Google font Roboto had been used exculively on the website
 
 * **First Time Visitor Goals**
 
-	<!-- * *As a First Time Visitor*, I would like to know what the company does upon opening the site. -->
-	
     * *As a First Time Visitor*, I want to be able to navigate the website simply and easily.
 
     * *As a First Time Visitor*, I want to access the site across all devices.
@@ -107,22 +106,22 @@ The Google font Roboto had been used exculively on the website
 * The Project is a one-page website with five main sections and a footer.
 
     1. The website has a home section that has a full screen width image carousel scrolling through images of Norrtälje and the surrounding area. Over the carousel is Visit Norrtälje header and a ‘More Info’ button that navigates the user to the about.
-    <!-- ![Home section](screenshot)     -->
+    ![Home section](assets/readme-files/home.png)    
     
     2. The second section is a short About Us section which advertises some of the history of Norrtälje and the appealing reasons to, it also has a link to the footer where you can access the address and social links.
-    <!-- ![About Section](screenshot) -->
+    ![About Section](assets/readme-files/about.png)
     
     3. The third section is the map section, the map is interactive with buttons that allow the user to locate all of the restaurants, attractions, accommodation, etc within and around Norrtälje.
-    <!-- ![Map Section](screenshot) -->
+    ![Map Section](assets/readme-files/map.png)
     
     4. The next section is the Info section. The Info section is linked to the map and the info changes depending on which button is pressed. It supplies the customer with short additional information about each of the subjects.
-    <!-- ![Info Section](screenshot) -->
+    ![Info Section](assets/readme-files/info.png)
     
     5. The last main section is the Contact form. The form allows the customer to make contact with the bureau directly via email.
-    <!-- ![Contact Section](screenshot) -->
+    ![Contact Section](assets/readme-files/contact.png)
     
     6. At the bottom is a footer. The footer has three columns. The first column holds the address, the middle column displays Norrtälje’s coat of arms and The last column has social media linking icons.
-    <!-- ![Footer Section](screenshot) -->
+    ![Footer Section](assets/readme-files/footer.png)
 
 ### **Existing Features**
 
@@ -153,7 +152,7 @@ All of the following technologies were used to create this website:-
 
 *	Both **HTML5** and **CSS3** have been used throughout the project to create the text and style of the website
 
-*	**JavaScript** and [Jquery]( https://jquery.com/)???? were used to implement the carousel function on the image carousel section and to simplify DOM manipulation
+*	**JavaScript** and [Jquery]( https://jquery.com/) were used to implement the carousel function on the image carousel section and to simplify DOM manipulation
 *	[GoogleFonts](https://fonts.google.com/) has been used to style the font of the text throughout the website
 *	[FontAwesome](https://fontawesome.com/) was used to add icons to the exercise class headers
 *	[Bootstrap]( https://getbootstrap.com/) was used for layout aesthetics, including grid styling and device responsiveness
@@ -177,19 +176,18 @@ All of the following technologies were used to create this website:-
 
 * *As a First Time Visitor*, I would like to know what the company does upon opening the site.
     *   On opening the website the visitor is met with the main image carousel with an advertisement proclaiming they should visit Norrtälje
-    *   On the carousel there is a ‘more info’ button directing the user to the about section
 
 * *As a First Time Visitor*, I want to be able to navigate the website simply and easily.
     *	The website has a sticky navigation menu that is always available to allow quick access to each section of the site.
-    <!-- *	Each section is clearly marked with a header -->
-    <!-- *	The home section has a ‘more info’ button which directs the customer to the About section where they can find out more about the town -->
+    *	Each section is clearly marked with a header
 
 * *As a First Time Visitor*, I want to access the site across all devices.
     *	The website is responsive across all devices
-    <!-- *	The website has three different layouts depending on what size screen the customer is using -->
+    *	The website has three different layouts depending on what size screen the customer is using
 
 * *As a First Time Visitor*, I want to find out about Norrtälje.
     *	The about section has some information on the town and the navbar has a button that directs the user to the about section
+    * The info section also has additional information about certain subjects such as restaurants and activities
 
 * *As a First Time Visitor*, I want to find where Norrtälje is situated.
     *   The about section explains where Norrtälje is located
@@ -200,9 +198,6 @@ All of the following technologies were used to create this website:-
 * *As a Returning Visitor*, I want to locate the websites social media links to stay up to date with any new content.
     *   The social media links are found on the footer at the bottom of the page
     *   A link to the social media is located in the navbar
-
-* *As a Returning Visitor*, I want to find out about any changes to fitness classes.
-    *	All classes are listed on the fitness classes section which can be located using the navigation bar
 
 * *As a Returning Visitor*, I would like to be able to search for accommodation in the area
     *	The interactive map has an accommodation button, allowing the visitor to see all of the available accommodation
@@ -222,11 +217,16 @@ All of the following technologies were used to create this website:-
 
 *    The HTML was Validted at [W3C Markup Validation Service](https://validator.w3.org/). 
 
-<!-- ![HTML Validation](screenshot) -->
+![HTML Validation](assets/readme-files/validator.w3.org.png)
+![HTML Validation](assets/readme-files/validator.w3.org-passed.png)
 
 *    The CSS was validate at [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/).
 
-<!-- ![CSS Validation](screenshot) -->
+![CSS Validation](assets/readme-files/jigsaw.w3.org.png)
+
+*    The Javascript was validated at [JSHint](https://jshint.com/).
+
+![CSS Validation](assets/readme-files/jshint.com.png)
 
 ### **Manual Testing**
 
@@ -260,18 +260,21 @@ All of the following technologies were used to create this website:-
     
 #### *Issues Found*
 
-<!-- *   An issue was found with the carousel on mobile devices, The resizing would make the right hand button drop below the rest of the carousel.
-    *   The issue was resolved with some changes to button and text sizes -->
+*   An issue was found with the carousel on mobile devices, The resizing would make the text too large and distort the carousel.
+    *   The issue was resolved with some changes to text sizes in the media queries
 
-<!-- *   The address text in the footer would show on too many lines on smaller devices
-    *   The issue was fix with a design change rather than a bug fix, the address now moves to a dropdown list on smaller devices -->
+*   JSHint found a missing semi-colon in my Javascript.
+    *   The issue was fixed by adding the semi-colon
+
+*   I was unable to make EmailJS function using the way I had been taught by Code Institute.
+    *   The issue was fixed by using a newer piece of code from the [EmailJS](https://www.emailjs.com/docs/tutorial/creating-contact-form/) website.
 
 ---
 
 ## **Deployment**
 
 ### **Remote Deployment**
-<!-- 1. Navigate to the GitHub [Repository:](link) -->
+1. Navigate to the GitHub [Repository:](https://github.com/RyanSyme/Milestone-2-Visit-Norrtalje)
 2. Click the **Settings** Tab.
 3. Scroll Down to the **Git Hub Pages** Heading.
 4. Select **Master Branch** as the source.
@@ -279,7 +282,7 @@ All of the following technologies were used to create this website:-
 6. Click on the link to go to the live deployed page.
 
 ### **Local Deployment**
-<!-- 1. Navigate to the GitHub [Repository:](link) -->
+1. Navigate to the GitHub [Repository:](https://github.com/RyanSyme/Milestone-2-Visit-Norrtalje)
 2. Click the **Code** drop down menu.
 3. Download the ZIP file and unpack locally
 4. Open a code editor of your choice and open the unziped file using the code editor.
@@ -290,9 +293,9 @@ All of the following technologies were used to create this website:-
 ## **Credits**
 
 ### **Content**
-<!-- *	Code was used from [Developers.Google](link)  -->
+*	Code was used from [Developers.Google](https://developers.google.com/maps/documentation/javascript/tutorials)
 
-<!-- With additional help from (Youtubevideo??????) -->
+*   With additional help from [Traversy Media](https://www.youtube.com/watch?v=Zxf1mnP5zcw&t=1101s)
 
 ### **Media**
 
@@ -307,8 +310,8 @@ All of the following technologies were used to create this website:-
 *	I received design inspiration from:
 
     * **Matt Rudge** at [Code Institute](https://courses.codeinstitute.net/login) 
-    <!-- * [??????](link) -->
-    <!-- * [developers.google](link)  -->
+    * [Developers.Google](https://developers.google.com/maps/documentation/javascript/tutorials) 
+    * [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) 
 
 *	I received styling inspiration from:
 
