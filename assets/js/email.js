@@ -2,6 +2,7 @@
             emailjs.init('user_xNMqk1zEghwvFrbJlZbHU');
         })();
 
+// code copied directly from emailjs.com
 
 window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -16,4 +17,4 @@ window.onload = function() {
                         console.log('FAILED...', error);
                     });
             });
-        }
+        };
