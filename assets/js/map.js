@@ -74,7 +74,7 @@ let accommodation = [
                 lat: 59.75811278272289,
                 lng: 18.708442999033014,
             },
-            content: "<h6>Den Gyllene Räven</h6><p>Hamnplan 1, 761 30 Norrtälje</p><p>+4617657771</p><p>+4617619140</p><p><a href='https://dengylleneraven.se/' target='_blank'>www.dengylleneraven.se</a></p>",
+            content: "<h6>Den Gyllene Räven</h6><p>Hamnplan 1, 761 30 Norrtälje</p><p>+4617657771</p><p><a href='https://dengylleneraven.se/' target='_blank'>www.dengylleneraven.se</a></p>",
         },
         {
             coords: {
