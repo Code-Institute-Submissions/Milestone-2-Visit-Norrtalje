@@ -16,6 +16,7 @@ window.onload = function() {
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
+                    // clear form inspired by https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/
                     document.getElementById('first_name').value=''; 
                     document.getElementById('last_name').value='';
                     document.getElementById('from_email').value='';

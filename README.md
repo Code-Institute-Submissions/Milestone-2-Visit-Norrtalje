@@ -313,6 +313,7 @@ All of the following technologies were used to create this website:-
     
     * [Developers.Google](https://developers.google.com/maps/documentation/javascript/tutorials) 
     * [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) 
+    * [geeksforgeeks.org](https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/)
 
 *	I received styling inspiration from:
 
