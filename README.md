@@ -187,7 +187,7 @@ All of the following technologies were used to create this website:-
 
 * *As a First Time Visitor*, I want to find out about Norrtälje.
     *	The about section has some information on the town and the navbar has a button that directs the user to the about section
-    * The info section also has additional information about certain subjects such as restaurants and activities
+    *   The info section also has additional information about certain subjects such as restaurants and activities
 
 * *As a First Time Visitor*, I want to find where Norrtälje is situated.
     *   The about section explains where Norrtälje is located
@@ -197,7 +197,6 @@ All of the following technologies were used to create this website:-
 
 * *As a Returning Visitor*, I want to locate the websites social media links to stay up to date with any new content.
     *   The social media links are found on the footer at the bottom of the page
-    *   A link to the social media is located in the navbar
 
 * *As a Returning Visitor*, I would like to be able to search for accommodation in the area
     *	The interactive map has an accommodation button, allowing the visitor to see all of the available accommodation

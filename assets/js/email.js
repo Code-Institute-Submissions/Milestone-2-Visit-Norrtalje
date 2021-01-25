@@ -12,16 +12,18 @@ window.onload = function() {
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_visit', 'contact_form', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                        alert('Message Sent');
+                        // clear form inspired by https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/
+                        document.getElementById('first_name').value=''; 
+                        document.getElementById('last_name').value='';
+                        document.getElementById('from_email').value='';
+                        document.getElementById('phone').value='';
+                        document.getElementById('message').value='';
                     }, function(error) {
                         console.log('FAILED...', error);
+                        alert('Message Failed');
                     });
-                    // clear form inspired by https://www.geeksforgeeks.org/how-to-clear-form-after-submit-in-javascript-without-using-reset/
-                    document.getElementById('first_name').value=''; 
-                    document.getElementById('last_name').value='';
-                    document.getElementById('from_email').value='';
-                    document.getElementById('phone').value='';
-                    document.getElementById('message').value='';
+                    
             });
         };
         

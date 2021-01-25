@@ -27,13 +27,10 @@
                         <a class="nav-link text-uppercase" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item mr-3 mb-2">
-                        <a class="nav-link text-uppercase" href="#map">MAP</a>
+                        <a class="nav-link text-uppercase" href="#map-section">MAP</a>
                     </li>
                     <li class="nav-item mr-3 mb-2">
                         <a class="nav-link text-uppercase" href="#contact">CONTACT US</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-uppercase" href="#footer">SOCIAL</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +88,7 @@
         </div>
         <!-- ============================== about end ============================== -->
         <!-- ================================= map ================================= -->
-        <div class="container">
+        <div class="container" id="map-section">
             <div class="row">
                 <div class="col-12">
                     <h2 class="main-headers text-uppercase">Norrtälje Overview</h2>
@@ -100,16 +97,16 @@
                     <div id="map"></div>
                 </div>
                 <div class="col-6 col-md-3 btn-mini">
-                    <a class="btn btn-map text-uppercase" id="accommodation-btn">Accommodation</a>
+                    <a onclick="setLocation('Accommodation')" class="btn btn-map text-uppercase" id="accommodation-btn">Accommodation</a>
                 </div>
                 <div class="col-6 col-md-3 btn-mini">
-                    <a class="btn btn-map text-uppercase" id="restaurant-btn">Restaurants</a>
+                    <a onclick="setLocation('Restaurants')" class="btn btn-map text-uppercase" id="restaurant-btn">Restaurants</a>
                 </div>
                 <div class="col-6 col-md-3 btn-mini">
-                    <a class="btn btn-map text-uppercase" id="activities-btn">Activities</a>
+                    <a onclick="setLocation('Activities')" class="btn btn-map text-uppercase" id="activities-btn">Activities</a>
                 </div>
                 <div class="col-6 col-md-3 btn-mini">
-                    <a class="btn btn-map text-uppercase" id="parking-btn">Parking</a>
+                    <a onclick="setLocation('Parking')" class="btn btn-map text-uppercase" id="parking-btn">Parking</a>
                 </div>
             </div>
         </div>
@@ -140,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <textarea id="message" name="message" rows="10" class="form-control form-text-area" placeholder="Do you have a Question?"></textarea>
+                    <textarea id="message" name="message" rows="10" class="form-control form-text-area" placeholder="Do you have a Question?" required=""></textarea>
                 </div>
             </div>
             <button type="submit" class="btn btn-block btn-contact my-3 text-uppercase"><strong>Send</strong></button>
